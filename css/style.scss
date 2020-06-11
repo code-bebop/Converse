@@ -215,12 +215,13 @@ html {
   &__layer {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: calc(100% - 132px);
     background: rgba(0,0,0,0);
     transition: background .5s;
     &.opened {
+      left: 0;
       background: rgba(0,0,0,.5);
     }
   }
@@ -230,7 +231,7 @@ html {
   width: 1440px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 360px 360px 720px;
   grid-template-rows: 1fr 1fr;
   &__item {
     &:nth-child(3n) {
@@ -398,12 +399,143 @@ html {
         }
       }
     }
-    &--flex {
+    &--grow-1 {
       flex-grow: 1;
+    }
+    &--grow-2 {
+      flex-grow: 2;
     }
   }
 }
 
 .main {
   
+}
+
+.section {
+  &--flex {
+    display: flex;
+  }
+  &--01 {
+    background: url(../img/KakaoTalk_20200601_100734242.jpg) no-repeat center center;
+    background-size: cover;
+    align-items: center;
+    justify-content: flex-end;
+    height: 760px;
+    margin: 70px 0;
+  }
+  &--02 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  &--03 {
+    background: url(../img/Home_02_1440x900.jpg) no-repeat center center;
+    background-size: cover;
+    align-items: center;
+    justify-content: flex-end;
+    height: 760px;
+    margin: 70px 0;
+    .section__title {
+      color: #9F7E92;
+    }
+    .section__des {
+      color: #9F7E92;
+    }
+    .section__btn {
+      background: #9F7E92;
+      color: #DBCAB9;
+    }
+  }
+  &--04 {
+    background: url(../img/Home_02_1440x900.gif) no-repeat center center;
+    background-size: cover;
+    height: 900px;
+    .section__title {
+      color: #1D5694;
+    }
+    .section__des {
+      color: #1D5694;
+    }
+    .section__btn {
+      background: #1D5694;
+      color: #FFF;
+    }
+  }
+  &__content {
+    padding: 0 30px;
+    &--right {
+      text-align: right;
+    }
+  }
+  &__title {
+    font: {
+      size: 50px;
+      weight: 600;
+    }
+    &--36p {
+      font: {
+        size: 36px;
+      }
+    }
+  }
+  &__des {
+    margin: {
+      top: 30px;
+      bottom: 20px;
+    }
+  }
+  &__btn {
+    width: 178px;
+    height: 44px;
+    background: #000;
+    color: #fff;
+    font: {
+      weight: 600;
+    }
+    margin: {
+      bottom: 15px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .5s;
+    &:hover {
+      opacity: .6;
+    }
+    &--right {
+      display: inline-flex;
+    }
+  }
+  &__link {
+    &--more {
+      display: block;
+      margin: {
+        top: 25px;
+        bottom: 30px;
+      }
+      font: {
+        weight: 600;
+      }
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 12px;
+        background: url(../img/arrow-right.png) no-repeat center center;
+        background-size: cover;
+        margin-right: 9px;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    &-name {
+      font: {
+        weight: 600;
+      }
+    }
+  }
 }
