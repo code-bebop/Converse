@@ -180,6 +180,8 @@ html {
     grid-template-columns: 2fr 1fr 1fr; }
   .dashboard--cols-112 {
     grid-template-columns: 1fr 1fr 2fr; }
+  .dashboard--cols-1111 {
+    grid-template-columns: repeat(4, 1fr); }
   .dashboard__item--border {
     border-left: 1px solid #000;
     border-bottom: 1px solid #000; }
@@ -196,6 +198,8 @@ html {
     grid-column: 2 / 4; }
   .dashboard__item--col-34 {
     grid-column: 3 / 4; }
+  .dashboard__item--col-35 {
+    grid-column: 3 / 5; }
   .dashboard-item {
     position: relative;
     width: 100%;
@@ -244,6 +248,14 @@ html {
       position: absolute;
       top: 30px;
       left: 30px; }
+      .dashboard-item__inner--flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+    .dashboard-item__foreword {
+      color: #fff;
+      margin-bottom: 30px; }
     .dashboard-item__title {
       color: #fff;
       font-size: 14px;
@@ -259,7 +271,10 @@ html {
     .dashboard-item__des {
       font-size: 16px;
       color: #FFF;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      text-align: left; }
+      .dashboard-item__des--color-black {
+        color: #000; }
     .dashboard-item__content {
       margin-left: 20px; }
     .dashboard-item__subject {

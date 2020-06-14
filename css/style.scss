@@ -245,6 +245,9 @@ html {
 		&-112 {
 			grid-template-columns: 1fr 1fr 2fr;
 		}
+		&-1111 {
+			grid-template-columns: repeat(4, 1fr);
+		}
 	}
   &__item {
     &--border {
@@ -277,6 +280,9 @@ html {
 			&-34 {
 				grid-column: 3 / 4;
 			}
+			&-35 {
+				grid-column: 3 / 5;
+			}
 		}
   }
   
@@ -298,7 +304,7 @@ html {
 				display: block;
 			}
     }
-    &__link {
+    &__link {			
       &--block {
         display: block;
         width: 100%;
@@ -350,6 +356,18 @@ html {
 			position: absolute;
 			top: 30px;
 			left: 30px;
+			&--flex {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+		&__foreword {
+			color: #fff;
+			margin: {
+				bottom: 30px;
+			}
 		}
     &__title {
       color: #fff;
@@ -387,6 +405,12 @@ html {
       color: #FFF;
 			margin: {
 				bottom: 20px;
+			}
+			text-align: left;
+			&--color {
+				&-black {
+					color: #000;
+				}
 			}
     }
     &__content {
