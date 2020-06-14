@@ -178,6 +178,8 @@ html {
     grid-template-rows: 1fr; }
   .dashboard--cols-211 {
     grid-template-columns: 2fr 1fr 1fr; }
+  .dashboard--cols-112 {
+    grid-template-columns: 1fr 1fr 2fr; }
   .dashboard__item--border {
     border-left: 1px solid #000;
     border-bottom: 1px solid #000; }
@@ -188,8 +190,12 @@ html {
     flex-direction: column; }
   .dashboard__item--row-2 {
     grid-row: 1 / 3; }
-  .dashboard__item--col-2 {
+  .dashboard__item--col-13 {
+    grid-column: 1 / 3; }
+  .dashboard__item--col-24 {
     grid-column: 2 / 4; }
+  .dashboard__item--col-34 {
+    grid-column: 3 / 4; }
   .dashboard-item {
     position: relative;
     width: 100%;
@@ -226,22 +232,22 @@ html {
       color: #FFF; }
       .dashboard-item__link--color-white:before {
         background: url(../img/arrow-right-white.png) no-repeat center center; }
-    .dashboard-item__link--abs {
-      position: absolute;
-      top: 225px;
-      left: 30px; }
     .dashboard-item__img {
       width: 100%;
       height: 100%;
       vertical-align: bottom; }
       .dashboard-item__img--state-hover {
         display: none; }
-    .dashboard-item__title {
+    .dashboard-item__inner {
+      width: calc(100% - 60px);
+      height: calc(100% - 60px);
       position: absolute;
-      top: 33px;
-      left: 24px;
+      top: 30px;
+      left: 30px; }
+    .dashboard-item__title {
       color: #fff;
-      font-size: 14px; }
+      font-size: 14px;
+      margin-bottom: 30px; }
       .dashboard-item__title--color-black {
         color: black; }
       .dashboard-item__title--size-50p {
@@ -249,13 +255,11 @@ html {
       .dashboard-item__title--bold {
         font-weight: 600; }
       .dashboard-item__title--right {
-        left: calc(75% - 24px); }
+        text-align: right; }
     .dashboard-item__des {
       font-size: 16px;
       color: #FFF;
-      position: absolute;
-      top: 167px;
-      left: 30px; }
+      margin-bottom: 20px; }
     .dashboard-item__content {
       margin-left: 20px; }
     .dashboard-item__subject {
@@ -273,17 +277,16 @@ html {
       height: 19px;
       cursor: pointer;
       position: absolute;
-      top: 30px;
-      left: 30px;
+      top: 0;
+      left: 0;
       z-index: 10;
       transition: transform 0.2s cubic-bezier(0.4, 0.9, 0.3, 2.25); }
       .dashboard-item__heart:hover {
         transform: scale(1.2); }
     .dashboard-item__info {
+      font-size: 14px;
       position: absolute;
-      left: 30px;
-      bottom: 30px;
-      font-size: 14px; }
+      bottom: 0; }
     .dashboard-item__name {
       margin-bottom: 5px; }
       .dashboard-item__name:hover {

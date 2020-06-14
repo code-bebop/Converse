@@ -242,6 +242,9 @@ html {
 		&-211 {
 			grid-template-columns: 2fr 1fr 1fr;
 		}
+		&-112 {
+			grid-template-columns: 1fr 1fr 2fr;
+		}
 	}
   &__item {
     &--border {
@@ -265,8 +268,14 @@ html {
 			}
 		}
 		&--col {
-			&-2 {
+			&-13 {
+				grid-column: 1 / 3;
+			}
+			&-24 {
 				grid-column: 2 / 4;
+			}
+			&-34 {
+				grid-column: 3 / 4;
 			}
 		}
   }
@@ -324,11 +333,6 @@ html {
           }
         }
       }
-      &--abs {
-        position: absolute;
-        top: 225px;
-        left: 30px;
-      }
     }
     &__img {
       width: 100%;
@@ -340,14 +344,21 @@ html {
 				}
 			}
     }
+		&__inner {
+			width: calc(100% - 60px);
+			height: calc(100% - 60px);
+			position: absolute;
+			top: 30px;
+			left: 30px;
+		}
     &__title {
-      position: absolute;
-      top: 33px;
-      left: 24px;
       color: #fff;
       font: {
         size: 14px;
       }
+			margin: {
+				bottom: 30px;
+			}
       &--color {
         &-black {
           color: black;
@@ -366,7 +377,7 @@ html {
 				}
 			}
 			&--right {
-				left: calc(75% - 24px);
+				text-align: right;
 			}
     }
     &__des {
@@ -374,9 +385,9 @@ html {
         size: 16px;
       }
       color: #FFF;
-      position: absolute;
-      top: 167px;
-      left: 30px;
+			margin: {
+				bottom: 20px;
+			}
     }
     &__content {
       margin: {
@@ -403,8 +414,8 @@ html {
 			height: 19px;
 			cursor: pointer;
 			position: absolute;
-			top: 30px;
-			left: 30px;
+			top: 0;
+			left: 0;
 			z-index: 10;
 			transition: transform .2s cubic-bezier(0.4, 0.9, 0.3, 2.25);
 			&:hover {
@@ -412,12 +423,11 @@ html {
 			}
 		}
 		&__info {
-			position: absolute;
-			left: 30px;
-			bottom: 30px;
 			font: {
 				size: 14px;
 			}
+			position: absolute;
+			bottom: 0;
 		}
 		&__name {
 			margin: {
