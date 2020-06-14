@@ -231,7 +231,6 @@ html {
   max-width: 1440px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: 1fr 1fr;
   &--rows {
 		&-1 {
@@ -247,6 +246,12 @@ html {
 		}
 		&-1111 {
 			grid-template-columns: repeat(4, 1fr);
+		}
+		&-11 {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&-1 {
+			grid-template-columns: 1fr;
 		}
 	}
   &__item {
@@ -361,6 +366,98 @@ html {
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
+				&-right {
+					align-items: flex-end;
+					text-align: right;
+				}
+				&-left {
+					justify-content: flex-start;
+					align-items: flex-start;
+					text-align: left;
+				}
+			}
+		}
+		
+		//header dashboard의 검색 부분
+		
+		&__form {
+			position: relative;
+			width: 520px;
+			margin: {
+				top: 40px;
+				left: 100px;
+			}
+		}
+		&__searchbar {
+			box-sizing: border-box;
+			border: none;
+			border-bottom: 1px solid #999;
+			outline: none;
+			padding: 15px;
+			width: 520px;
+			font: {
+				size: 20px;
+				weight: 600;
+			}
+		}
+		&__searchbtn {
+			border: none;
+			outline: none;
+			background: none;
+			font: {
+				size: 20px;
+			}
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			transform: translateY(-50%);
+			cursor: pointer;
+		}
+		
+		//haeder dashboard의 인기 검색어 부분
+		
+		&__list {
+			margin: {
+				top: 50px;
+				left: 115px;
+			}
+		}
+		&__item {
+			font: {
+				size: 20px;
+				weight: 600;
+			}
+			margin: {
+				bottom: 25px;
+			}
+		}
+		
+		&__btn {
+			width: 178px;
+			height: 44px;
+			background: #000;
+			color: #fff;
+			font: {
+				weight: 600;
+			}
+			margin: {
+				bottom: 15px;
+			}
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: opacity .5s;
+			&:hover {
+				opacity: .6;
+			}
+			&--color {
+				&-violet {
+					color: #DBCAB9;
+					background-color: #9F7E92;
+				}
+				&-blue {
+					background-color: #1D5694;
+				}
 			}
 		}
 		&__foreword {
@@ -381,8 +478,19 @@ html {
         &-black {
           color: black;
         }
+				&-violet {
+					color: #9F7E92;
+				}
+				&-blue {
+					color: #1D5694;
+				}
       }
       &--size {
+				&-40p {
+					font: {
+						size: 40px;
+					}
+				}
         &-50p {
           font: {
             size: 50px;
@@ -405,11 +513,16 @@ html {
       color: #FFF;
 			margin: {
 				bottom: 20px;
-			}
-			text-align: left;
+			}			
 			&--color {
 				&-black {
 					color: #000;
+				}
+				&-violet {
+					color: #9F7E92;
+				}
+				&-blue {
+					color: #1D5694;
 				}
 			}
     }
@@ -486,6 +599,10 @@ html {
         }
       }
     }
+		
+		&--right {
+			text-align: right;
+		}
 //    반으로 나뉜 그리드 상단 부분
     &--basis-185px {
       flex-basis: 185px;
@@ -494,68 +611,6 @@ html {
       display: flex;
       flex-direction: column;
       justify-content: center;
-    }
-    &--right {
-      &__title {
-        font: {
-          size: 42px;
-          weight: 600;
-        }
-        margin: {
-          top: 45px;
-          left: 70px;
-        }
-      }
-//      검색
-      &__form {
-        position: relative;
-        width: 520px;
-        margin: {
-          top: 40px;
-          left: 100px;
-        }
-      }
-      &__searchbar {
-        box-sizing: border-box;
-        border: none;
-        border-bottom: 1px solid #999;
-        outline: none;
-        padding: 15px;
-        width: 520px;
-        font: {
-          size: 20px;
-          weight: 600;
-        }
-      }
-      &__searchbtn {
-        border: none;
-        outline: none;
-        background: none;
-        font: {
-          size: 20px;
-        }
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        transform: translateY(-50%);
-        cursor: pointer;
-      }
-//      인기검색어
-      &__list {
-        margin: {
-          top: 50px;
-          left: 115px;
-        }
-      }
-      &__item {
-        font: {
-          size: 20px;
-          weight: 600;
-        }
-        margin: {
-          bottom: 25px;
-        }
-      }
     }
     &--grow-1 {
       flex-grow: 1;
@@ -574,51 +629,10 @@ html {
   &--flex {
     display: flex;
   }
-  &--01 {
-    background: url(../img/KakaoTalk_20200601_100734242.jpg) no-repeat center center;
-    background-size: cover;
-    align-items: center;
-    justify-content: flex-end;
-    height: 760px;
-    margin: 70px 0;
-  }
   &--02 {
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
-  &--03 {
-    background: url(../img/Home_02_1440x900.jpg) no-repeat center center;
-    background-size: cover;
-    align-items: center;
-    justify-content: flex-end;
-    height: 760px;
-    margin: 70px 0;
-    .section__title {
-      color: #9F7E92;
-    }
-    .section__des {
-      color: #9F7E92;
-    }
-    .section__btn {
-      background: #9F7E92;
-      color: #DBCAB9;
-    }
-  }
-  &--04 {
-    background: url(../img/Home_02_1440x900.gif) no-repeat center center;
-    background-size: cover;
-    height: 900px;
-    .section__title {
-      color: #1D5694;
-    }
-    .section__des {
-      color: #1D5694;
-    }
-    .section__btn {
-      background: #1D5694;
-      color: #FFF;
-    }
   }
   &__content {
     padding: 0 30px;
