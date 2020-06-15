@@ -421,7 +421,8 @@ html {
 
 .section--10 {
   border-top: 1px solid #E5E5E5;
-  border-bottom: 1px solid #E5E5E5; }
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 60px; }
 
 .section__content {
   padding: 0 30px; }
@@ -474,31 +475,93 @@ html {
 .section__item-name {
   font-weight: 600; }
 
-.card {
+.service {
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
   margin: 0 auto; }
-  .card__item {
+  .service__item {
     height: 260px;
     border-left: 1px solid #E5E5E5;
     flex-grow: 1; }
-    .card__item:first-child {
+    .service__item:first-child {
       border-left: none; }
-  .card__content {
+  .service__content {
     text-align: center;
     margin-top: 30px; }
-  .card__icon--mr-30 {
+  .service__icon--mr-30 {
     margin-right: 30px; }
-  .card__title {
+  .service__title {
     font-size: 18px;
     margin-top: 30px;
     margin-bottom: 15px; }
-  .card__des {
+  .service__des {
     font-size: 12px;
     color: #757575; }
-  .card__link {
+  .service__link {
     font-size: 12px;
     display: inline-block;
     text-decoration: underline;
     margin-top: 45px; }
+
+.footer {
+  border-top: 1px solid #E5E5E5; }
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto; }
+  .footer__item {
+    border-left: 1px solid #E5E5E5;
+    flex-grow: 1;
+    height: 162px; }
+    .footer__item:first-child {
+      border-left: none; }
+  .footer__content {
+    margin-top: 30px;
+    margin-left: 40px; }
+  .footer__title {
+    margin-bottom: 17px;
+    font-size: 14px; }
+  .footer__icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #E5E5E5;
+    margin-left: -5px; }
+  .footer__listitem {
+    font-size: 12px;
+    color: #757575;
+    margin-bottom: 10px; }
+    .footer__listitem--bold {
+      font-weight: 600; }
+  .footer__company {
+    background-color: #000;
+    height: 200px;
+    box-sizing: border-box; }
+    .footer__companytxt {
+      color: #9B9B9B;
+      font-size: 12px;
+      display: inline-block;
+      letter-spacing: -.01em; }
+    .footer__companylink {
+      color: #FFF;
+      font-size: 12px;
+      letter-spacing: -.01em;
+      display: inline-block;
+      line-height: 20px; }
+  .footer__address {
+    max-width: 714px;
+    margin-top: 30px;
+    margin-left: 40px; }
+  .footer__copyright {
+    margin-top: 30px; }
+  .footer__insurance {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 40px; }

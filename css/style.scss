@@ -643,6 +643,9 @@ html {
 			top: 1px solid #E5E5E5;
 			bottom: 1px solid #E5E5E5;
 		}
+		margin: {
+			bottom: 60px;
+		}
 	}
   &__content {
     padding: 0 30px;
@@ -723,7 +726,7 @@ html {
 }
 
 
-.card {
+.service {
 	display: flex;
 	justify-content: space-between;
 	max-width: 1440px;
@@ -774,6 +777,112 @@ html {
 		text-decoration: underline;
 		margin: {
 			top: 45px;
+		}
+	}
+}
+
+
+.footer {
+	border: {
+		top: 1px solid #E5E5E5;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+	&__item {
+		border: {
+			left: 1px solid #E5E5E5;
+		}
+		flex-grow: 1;
+		height: 162px;
+		&:first-child {
+			border-left: none;
+		}
+	}
+	&__content {
+		margin: {
+			top: 30px;
+			left: 40px;
+		}
+	}
+	&__title {
+		margin: {
+			bottom: 17px;
+		}
+		font: {
+			size: 14px;
+		}
+	}
+	&__icon {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		vertical-align: bottom;
+		width: 50px;
+		height: 50px;
+		border: 1px solid #E5E5E5;
+		margin-left: -5px;
+	}
+	&__list {
+		&item {
+			font: {
+				size: 12px;
+			}
+			color: #757575;
+			margin: {
+				bottom: 10px;
+			}
+			&--bold {
+				font: {
+					weight: 600;
+				}
+			}
+		}
+	}
+	&__company {
+		background-color: #000;
+		height: 200px;
+		box-sizing: border-box;
+		&txt {
+			color: #9B9B9B;
+			font: {
+				size: 12px;
+			}
+			display: inline-block;
+			letter-spacing: -.01em;
+		}
+		&link {
+			color: #FFF;
+			font: {
+				size: 12px;
+			}
+			letter-spacing: -.01em;
+			display: inline-block;
+			line-height: 20px;
+		}
+	}
+	&__address {
+		max-width: 714px;
+		margin: {
+			top: 30px;
+			left: 40px;
+		}
+	}
+	&__copyright {
+		margin: {
+			top: 30px;
+		}
+	}
+	&__insurance {
+		float: right;
+		display: flex;
+		flex-direction: column;
+		margin: {
+			top: 30px;
+			left: 40px;
 		}
 	}
 }
