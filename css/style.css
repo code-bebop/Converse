@@ -4,19 +4,13 @@ html {
 .blind {
   text-indent: -9999px; }
 
-.inner {
-  max-width: 1440px;
-  margin: 0 auto; }
-  .inner--notice {
-    position: relative; }
-  .inner--header {
-    display: flex;
-    align-items: center;
-    height: 60px; }
-
 .notice {
   background: #E5E5E5;
   text-align: center; }
+  .notice__inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative; }
   .notice__slider {
     display: inline-block; }
 
@@ -57,6 +51,13 @@ html {
   .slider__link:before {
     content: 'NEW';
     display: block; }
+
+.header__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 60px; }
 
 .header__left {
   flex-grow: 7;
@@ -415,6 +416,13 @@ html {
   justify-content: center;
   text-align: center; }
 
+.section--09 {
+  margin-bottom: 180px; }
+
+.section--10 {
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5; }
+
 .section__content {
   padding: 0 30px; }
   .section__content--right {
@@ -465,3 +473,32 @@ html {
 
 .section__item-name {
   font-weight: 600; }
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto; }
+  .card__item {
+    height: 260px;
+    border-left: 1px solid #E5E5E5;
+    flex-grow: 1; }
+    .card__item:first-child {
+      border-left: none; }
+  .card__content {
+    text-align: center;
+    margin-top: 30px; }
+  .card__icon--mr-30 {
+    margin-right: 30px; }
+  .card__title {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 15px; }
+  .card__des {
+    font-size: 12px;
+    color: #757575; }
+  .card__link {
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: underline;
+    margin-top: 45px; }
