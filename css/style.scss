@@ -2,6 +2,13 @@ html {
   font-family: "proxima nova", "proxima-nova", "Nanum Gothic", Helvetica, Arial, sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+  &.overflow {
+    overflow-y: hidden;
+  }
+}
+
 .blind {
 	text-indent: -9999px;
 }
@@ -76,6 +83,13 @@ html {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  &.is-sticky {
+    border-bottom: 1px solid #E5E5E5;
+  }
 	&__inner {
 		max-width: 1440px;
 		margin: 0 auto;
@@ -98,6 +112,7 @@ html {
 		display: block;
 		width: 120px;
 		height: 14px;
+    margin-left: 20px;
 		background: url(../img/logo-top.png) no-repeat center center;
 		background-size: cover;    
 	}
@@ -176,6 +191,13 @@ html {
         display: none;
       }
     }
+    &.is-sticky {
+      width: 60px;
+      justify-content: center;
+      .search__btn__txt {
+        display: none;
+      }
+    }
     &__txt {
       color: #fff;
     }
@@ -199,7 +221,7 @@ html {
   &__dashboard {
     width: 100%;
     position: absolute;
-    top: 132px;
+    top: 60px;
     left: -300%;
     border: {
       top: 1px solid #000;
@@ -213,10 +235,10 @@ html {
   }
   &__layer {
     position: absolute;
-    bottom: 0;
+    top: 100%;
     left: -100%;
     width: 100%;
-    height: calc(100% - 132px);
+    height: 100vh;
     background: rgba(0,0,0,0);
     transition: background .5s;
     &.opened {
@@ -831,6 +853,7 @@ html {
 			font: {
 				size: 12px;
 			}
+      line-height: 12px;
 			color: #757575;
 			margin: {
 				bottom: 10px;
@@ -852,16 +875,16 @@ html {
 				size: 12px;
 			}
 			display: inline-block;
-			letter-spacing: -.01em;
+      letter-spacing: -.01em;
 		}
 		&link {
 			color: #FFF;
 			font: {
 				size: 12px;
 			}
-			letter-spacing: -.01em;
 			display: inline-block;
 			line-height: 20px;
+      letter-spacing: -.01em;
 		}
 	}
 	&__address {
@@ -885,4 +908,47 @@ html {
 			left: 40px;
 		}
 	}
+}
+
+.add {
+  &--fixed {
+    position: fixed;
+    bottom: 50px;
+    right: -190px;
+    transition: right .5s;
+    &:hover {
+      right: 0;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 250px;
+    height: 80px;
+    padding: {
+      right: 10px;
+    }
+    border-radius: 40px 0 0 40px;
+    background-color: #000;
+  }
+  &__txt {
+    color: #fff;
+    font: {
+      size: 15px;
+      weight: 600;
+    }
+    line-height: 18px;
+    letter-spacing: -0.025em;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      background: url(../img/logo-fixed.png) no-repeat center center;
+      background-size: cover;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
 }
