@@ -30,7 +30,7 @@ body {
   display: inline-block;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 20px;
   transform: translateY(-50%);
   &__img {
     width: 18px;
@@ -85,7 +85,7 @@ body {
 .header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 20;
   background: #fff;
   &.is-sticky {
     border-bottom: 1px solid #E5E5E5;
@@ -220,6 +220,7 @@ body {
   }
   &__dashboard {
     width: 100%;
+    height: 757px;
     position: absolute;
     top: 60px;
     left: -300%;
@@ -231,6 +232,9 @@ body {
     transition: left .5s;
     &.opened {
       left: 0;
+    }
+    .dashboard {
+      grid-template-rows: 378px 378px;
     }
   }
   &__layer {
@@ -759,6 +763,7 @@ body {
 			left: 1px solid #E5E5E5;
 		}
 		flex-grow: 1;
+    flex-basis: calc(1440px/4);
 		&:first-child {
 			border-left: none;
 		}
@@ -949,6 +954,78 @@ body {
       background-size: cover;
       vertical-align: middle;
       margin-right: 10px;
+    }
+  }
+}
+
+//1440px 이하 미디어쿼리
+
+@media screen and (max-width: 1440px) {
+  
+  
+  .dashboard {
+    &-item {
+      &__subject {
+        font: {
+          size: 2.08vw;
+        }
+      }
+      &__link {
+        &--txt {
+          font: {
+            size: .97vw;
+          }
+        }
+      }
+      &__form {
+        width: 36.11vw;
+        margin: {
+          top: 2.77vw;
+          left: 6.94vw;
+        }
+      }
+      &__searchbar {
+        width: 36.11vw;
+      }
+      &__list {
+        margin: {
+          top: 3.47vw;
+          left: 7.98vw;
+        }
+      }
+      &__title {
+        font: {
+          size: 0.97vw;
+        }
+        margin: {
+          bottom: 2.08vw;
+        }
+        &--size {
+          &-40p {
+            font: {
+              size: 2.77vw;
+            }
+          }
+          &-50p {
+            font: {
+              size: 3.47vw;
+            }
+          }  
+        }
+      }
+      &__des {
+        font: {
+          size: 1.11vw;
+        }
+        margin: {
+          bottom: 1.38vw;
+        }
+      }
+      &__foreword {
+        font: {
+          size: 1.11vw;
+        }
+      }
     }
   }
 }
