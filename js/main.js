@@ -1,3 +1,9 @@
+function footerHandler() {
+	$(".footer__item--mobile").click((e)=>{
+		$(".footer__item--mobile").toggleClass("opened");
+	})
+}
+
 function searchHandler() {
   $(".search__btn").click((e)=>{
     $(".search__btn").toggleClass("opened");
@@ -19,7 +25,13 @@ function searchHandler() {
 
 function noticeSlick() {
   $(".slider").slick({
-    autoplay: true
+    autoplay: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        arrows: false
+      }
+    }]
   })
 }
 
@@ -27,6 +39,7 @@ function init() {
   $(document).ready((e)=>{
     noticeSlick();
     searchHandler();
+		footerHandler();
   })
 }
 
