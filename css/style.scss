@@ -151,6 +151,42 @@ body {
 	}
 }
 
+.private {
+  &__item {
+    border: {
+      top: 1px solid #E5E5E5;
+    }
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  &__link {
+    display: block;    
+    width: 100%;
+  }
+  &__txt {
+    font: {
+      size: 14px;
+      weight: 600;
+    }
+    margin-left: 30px;
+    line-height: 50px;
+    display: block;
+    position: relative;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 9px;
+      height: 14px;
+      background: url(../img/arrow-right-m.png) no-repeat center center;
+      background-size: cover;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -898,18 +934,6 @@ body {
       letter-spacing: -.01em;
 		}
 	}
-	&__address {
-		max-width: 714px;
-		margin: {
-			top: 30px;
-			left: 40px;
-		}
-	}
-	&__copyright {
-		margin: {
-			top: 30px;
-		}
-	}
 	&__insurance {
 		float: right;
 		display: flex;
@@ -919,6 +943,37 @@ body {
 			left: 40px;
 		}
 	}
+}
+
+.address {
+  max-width: 714px;
+  box-sizing: border-box;
+  padding: {
+    top: 30px;
+    left: 40px;
+  }
+  &__txt {
+    color: #9B9B9B;
+    font: {
+      size: 12px;
+    }
+    display: inline-block;
+    letter-spacing: -.01em;
+  }
+  &__link {
+    color: #FFF;
+    font: {
+      size: 12px;
+    }
+    display: inline-block;
+    line-height: 20px;
+    letter-spacing: -.01em;
+  }
+  &__copyright {
+		margin: {
+			top: 30px;
+		}
+  }
 }
 
 .add {
@@ -1044,9 +1099,28 @@ body {
   }
 }
 
+//모바일 미디어쿼리
+
 @media screen and (max-width: 768px) {
   .locate {
     display: none;
+    &--mobile {
+      display: inline-block;
+      position: static;
+      transform: translateY(0);
+      background: #000;
+      padding: 0 15px;
+      height: 53px;
+      display: flex;
+      align-items: center;
+    }
+    &__lan {
+      &--color {
+        &-white {
+          color: #fff;
+        }
+      }
+    }
   }
   
   .slider {
@@ -1078,13 +1152,35 @@ body {
       background-size: cover;
     }
     &__category {
-      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin: 0;
+      width: 100%;
     }
     &__menu {
       
     }
   }
   
+  .category {
+    background: #fff;
+    width: 100%;
+    height: 290px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    &__item {
+      
+    }
+    &__link {
+      font: {
+        size: 30px;
+        weight: 600;
+      }
+    }
+  }
   .menu {
     width: auto;
     &__item {
@@ -1220,36 +1316,48 @@ body {
 		}
   }
 	
-	.footer {
-		&__inner {
+  .add {
+    &--fixed {
+      right: 0; 
+    }
+    &__link {
+      width: 195px;
+      height: 50px;
+    }
+    &__txt {
+      font: {
+        size: 12px;
+      }
+      &:before {
+        background: url(../img/logo-fixed-m.png) no-repeat center center;
+      }
+    }
+  }
+  
+  .accordion {
+    display: block;
+    width: 100%;
+    height: 54px;
+    border-bottom: 1px solid #E5E5E5;
+    overflow: hidden;
+    cursor: pointer;
+    transition: height .3s;
+    &.opened {
+      height: 130px;
+      .accordion__title {
+        &:after {
+          display: none;
+        }
+        &:before {
+          display: inline-block;
+        }
+      }
+    }
+    &__inner {
 			flex-direction: column;
 			align-content: center;
-		}
-		&__item {
-			display: none;
-			&--mobile {
-				display: block;
-				height: 54px;
-				border-bottom: 1px solid #E5E5E5;
-				overflow: hidden;
-				cursor: pointer;
-				transition: height .3s;
-				&.opened {
-					height: 120px;
-					.footer__title {
-						&:after {
-							display: none;
-						}
-						&:before {
-							display: inline-block;
-						}
-					}
-				}
-			}
-		}
-		&__content {
-			margin: 22px 17px 0;
-		}
+      margin: 22px 17px 0;
+    }
 		&__title {
 			color: #828282;
 			font: {
@@ -1288,7 +1396,25 @@ body {
 		&__listitem {
 			margin-bottom: 18px;
 		}
-		
+    &__link {
+      font: {
+        size: 12px;
+      }
+      color: #000;
+    }
+  }
+  
+	.footer {
+		&__inner {
+      flex-direction: column;
+			align-content: center;
+		}
+		&__item {
+			display: none;
+			&--mobile {
+        display: block;
+			}
+		}
 		&__company {
 			background-color: #fff;
 			&txt {
@@ -1321,6 +1447,10 @@ body {
 			flex-direction: column;
 			flex-wrap: wrap;
 			align-items: center;
+      margin: {
+        bottom: 25px;
+        right: 40px;
+      }
 		}
 		&__copyright {
 			margin: 0;
@@ -1328,5 +1458,59 @@ body {
 		&__insurance {
 			display: none;
 		}
+    &__sns {
+      display: flex;
+      justify-content: center;
+      margin: {
+        bottom: 10px;
+      }
+    }
+    &__icon {
+      &--mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        &:first-child {
+          margin-right: 30px;
+        }
+      }
+    }
 	}
+  .address {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: {
+      bottom: 25px;
+      right: 40px;
+    }
+    background: #fff;
+    &__txt {
+      color: #757575;
+      &:first-child {
+        font: {
+          size: 15px;
+          weight: 600;
+        }
+        color: #000;
+        margin-bottom: 25px;
+      }
+    }
+    &__link {
+      color: #000;
+      &--24h {
+        &:after {
+          content: ' (24시간 접수 가능)';
+          display: inline;
+          font: {
+            size: 12px;
+            color: #757575;
+          }
+        }
+      }
+    }
+  }
 }

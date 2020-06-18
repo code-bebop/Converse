@@ -1,6 +1,6 @@
 function footerHandler() {
-	$(".footer__item--mobile").click((e)=>{
-		$(".footer__item--mobile").toggleClass("opened");
+	$(".accordion").click((e)=>{
+		$(".accordion").toggleClass("opened");
 	})
 }
 
