@@ -91,6 +91,8 @@ body {
     background-size: cover; }
   .header__category {
     margin-left: 22px; }
+  .header__mobile {
+    display: none; }
   .header__menu {
     margin-right: 20px; }
     .header__menu :hover {
@@ -113,6 +115,8 @@ body {
   border-top: 1px solid #E5E5E5;
   background-color: #fff;
   box-sizing: border-box; }
+  .private__item:last-child {
+    border-bottom: 1px solid #E5E5E5; }
 
 .private__link {
   display: block;
@@ -121,7 +125,7 @@ body {
 .private__txt {
   font-size: 14px;
   font-weight: 600;
-  margin-left: 30px;
+  margin: 0 30px;
   line-height: 50px;
   display: block;
   position: relative; }
@@ -610,6 +614,8 @@ body {
     flex-direction: column;
     margin-top: 30px;
     margin-left: 40px; }
+  .footer__sns {
+    display: none; }
 
 .address {
   max-width: 714px;
@@ -724,22 +730,31 @@ body {
       outline: none;
       width: 16px;
       height: 14px;
+      cursor: pointer;
       background: url(../img/icon-menu-m.png) no-repeat center center;
       background-size: cover; }
-    .header__category {
+    .header__mobile {
+      display: block;
       position: absolute;
-      top: 100%;
-      left: 0;
-      margin: 0;
-      width: 100%; }
+      top: -68px;
+      left: -100%;
+      width: 100vw;
+      max-height: 100vh;
+      overflow: auto;
+      transition: left .5s; }
+      .header__mobile.opened {
+        left: 0; }
   .category {
-    background: #fff;
-    width: 100%;
-    height: 290px;
-    padding: 40px;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box; }
+    display: none; }
+    .category--mobile {
+      background: #fff;
+      width: 100%;
+      height: 290px;
+      padding: 40px;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      display: block; }
     .category__link {
       font-size: 30px;
       font-weight: 600; }
@@ -830,6 +845,7 @@ body {
     width: 100%;
     height: 54px;
     border-bottom: 1px solid #E5E5E5;
+    background: #fff;
     overflow: hidden;
     cursor: pointer;
     transition: height .3s; }
@@ -929,6 +945,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    max-width: inherit;
     padding-bottom: 25px;
     padding-right: 40px;
     background: #fff; }

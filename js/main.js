@@ -1,3 +1,10 @@
+function hambugerHandler() {
+	$(".header__hambuger").click((e)=>{
+		$(".header__mobile").toggleClass("opened");
+		$("body").toggleClass("overflow");
+	})
+}
+
 function footerHandler() {
 	$(".accordion").click((e)=>{
 		$(".accordion").toggleClass("opened");
@@ -40,6 +47,7 @@ function init() {
     noticeSlick();
     searchHandler();
 		footerHandler();
+		hambugerHandler();
   })
 }
 
