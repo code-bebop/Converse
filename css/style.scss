@@ -1152,6 +1152,9 @@ body {
       justify-content: space-between;
       flex-grow: 3.5;
     }
+		&__category {
+			display: none;
+		}
     &__hambuger {
       display: inline-block;
       background-color: none;
@@ -1167,7 +1170,7 @@ body {
 			display: block;
 			position: absolute;
 			top: -68px;
-			left: -100%;
+			left: -105%;
 			width: 100vw;
 			max-height: 100vh;
 			overflow: auto;
@@ -1178,6 +1181,34 @@ body {
 		}
   }
   
+	.mobile {
+		&__header {
+			background: #fff;
+			border-bottom: 1px solid #E5E5E5;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 15px;
+			height: 50px;
+		}
+		&__logo {
+			width: 27px;
+			height: 34px;
+			display: block;
+			background: url(../img/logo-m.png) no-repeat center center;
+			background-size: cover;
+		}
+		&__icons {
+			display: flex;
+		}
+		&__item {
+			margin-right: 15px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	
   .category {
 		display: none;
 		&--mobile {

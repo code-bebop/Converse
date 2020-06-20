@@ -1,7 +1,12 @@
 function hambugerHandler() {
 	$(".header__hambuger").click((e)=>{
-		$(".header__mobile").toggleClass("opened");
-		$("body").toggleClass("overflow");
+		$(".header__mobile").addClass("opened");
+		$("body").addClass("overflow");
+	})
+	$(".mobile__item--close").click((e)=>{
+		e.preventDefault();
+		$(".header__mobile").removeClass("opened");
+		$("body").removeClass("overflow");
 	})
 }
 

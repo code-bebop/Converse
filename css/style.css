@@ -723,6 +723,8 @@ body {
     .header__left {
       justify-content: space-between;
       flex-grow: 3.5; }
+    .header__category {
+      display: none; }
     .header__hambuger {
       display: inline-block;
       background-color: none;
@@ -737,13 +739,33 @@ body {
       display: block;
       position: absolute;
       top: -68px;
-      left: -100%;
+      left: -105%;
       width: 100vw;
       max-height: 100vh;
       overflow: auto;
       transition: left .5s; }
       .header__mobile.opened {
         left: 0; }
+  .mobile__header {
+    background: #fff;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 50px; }
+  .mobile__logo {
+    width: 27px;
+    height: 34px;
+    display: block;
+    background: url(../img/logo-m.png) no-repeat center center;
+    background-size: cover; }
+  .mobile__icons {
+    display: flex; }
+  .mobile__item {
+    margin-right: 15px; }
+    .mobile__item:last-child {
+      margin: 0; }
   .category {
     display: none; }
     .category--mobile {
