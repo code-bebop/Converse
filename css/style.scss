@@ -3,6 +3,7 @@ html {
 }
 
 body {
+	width: 100%;
   overflow-x: hidden;
   &.overflow {
     overflow-y: hidden;
@@ -15,14 +16,14 @@ body {
 
 .notice {
   background: #E5E5E5;
-  text-align: center;
 	&__inner {
 		max-width: 1440px;
 		margin: 0 auto;
 		position: relative;
+		text-align: center;
 	}
   &__slider {
-    display: inline-block;
+    display: inline-block; 
   }
 }
 
@@ -83,11 +84,12 @@ body {
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
   background: #fff;
+	position: relative;
+	z-index: 20;
   &.is-sticky {
+		position: sticky;
+		top: 0;
     border-bottom: 1px solid #E5E5E5;
   }
 	&__inner {
@@ -122,9 +124,6 @@ body {
 	&__category {
     margin-left: 22px;
 	}
-	&__mobile {
-		display: none;
-	}
   &__menu {
     margin-right: 20px;
     :hover {
@@ -152,6 +151,10 @@ body {
       color: #000;
     }
 	}
+}
+
+.mobile {
+	display: none;
 }
 
 .private {
@@ -303,6 +306,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   display: grid;
+	grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   &--rows {
 		&-1 {
@@ -340,7 +344,11 @@ body {
     &--flex {
       display: flex;
       flex-direction: column;
-    }
+			&-row {
+				display: flex;
+				flex-direction: row;
+			}
+		}
 		&--row {
 			//	전체의 반을 차지하는 그리드
 			&-2 {
@@ -731,13 +739,8 @@ body {
   }
   &__title {
     font: {
-      size: 50px;
+      size: 36px;
       weight: 600;
-    }
-    &--36p {
-      font: {
-        size: 36px;
-      }
     }
   }
   &__des {
@@ -954,6 +957,9 @@ body {
 	&__sns {
 		display: none;
 	}
+	&__locate {
+		display: none;
+	}
 }
 
 .address {
@@ -1166,22 +1172,21 @@ body {
       background: url(../img/icon-menu-m.png) no-repeat center center;
       background-size: cover;
     }
-		&__mobile {
-			display: block;
-			position: absolute;
-			top: -68px;
-			left: -105%;
-			width: 100vw;
-			max-height: 100vh;
-			overflow: auto;
-			transition: left .5s;
-			&.opened {
-				left: 0;
-			}
-		}
   }
   
 	.mobile {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: -105%;
+		width: 100vw;
+		height: 100vh;
+		overflow: auto;
+		z-index: 21;
+		transition: left .5s;
+		&.opened {
+			left: 0;
+		}
 		&__header {
 			background: #fff;
 			border-bottom: 1px solid #E5E5E5;
@@ -1282,6 +1287,11 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(300px, auto));
       }
     }
+		&--mobilecols {
+			&-1 {
+				grid-template-columns: 1fr;
+			}
+		}
     &__item {
       &--col {
         &-13 {
@@ -1310,6 +1320,7 @@ body {
     }
     &-item {
       &__title {
+				font-size: 12px;
         &--size {
           &-50p {
             font-size: 28px;
@@ -1334,11 +1345,61 @@ body {
           display: none;
         }
       }
+			&__name {
+				font-size: 12px;
+			}
+			&__value {
+				font-size: 12px;
+			}
+			&__overlay {
+				&-txt {
+					font-size: 18px;
+					color: #000;
+					opacity: 1;
+					&--color {
+						&-white {
+							color: #fff;
+						}
+					}
+				}
+			}
     }
   }
   
   .section {
-    
+		&__content {
+			padding: 0 10px;
+		}
+		&__title {
+			font-size: 24px;
+		}
+		&__link {
+			background: #000;
+			color: #fff;
+			display: flex;
+			width: 100%;
+			height: 54px;
+			box-sizing: border-box;
+			justify-content: center;
+			align-items: center;
+			&:before {
+				display: none;
+			}
+		}
+		&__list {
+			width: auto;
+		}
+		&__item {
+			&-img {
+				width: 100%;
+			}
+			&-name {
+				font: {
+					size: 12px;
+					weight: 300;
+				}
+			}
+		}
   }
   
   .service {
@@ -1462,6 +1523,7 @@ body {
 		}
 		&__item {
 			display: none;
+			height: auto;
 			&--mobile {
         display: block;
 			}
@@ -1528,6 +1590,9 @@ body {
         }
       }
     }
+		&__locate {
+			display: block;
+		}
 	}
 	
   .address {

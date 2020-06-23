@@ -1,221 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/plugin/slick.css">
-  <link rel="stylesheet" href="css/plugin/slick-theme.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/plugin/slick.css">
+	<link rel="stylesheet" href="css/plugin/slick-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 </head>
-<body>
-  
-  <div class="notice">
-     <div class="notice__inner">
-       <div class="locate">
-         <img src="img/locale-kr.svg" alt="" class="locate__img">
-         <div class="locate__lan">
-           <span class="locate__lan__abbr">KR</span>
-           <span class="locate__lan__native">한국어</span>
-         </div>
-       </div>
-       <div class="notice__slider">
-         <ul class="slider">
-           <li class="slider__item">
-             <a href="" class="slider__link">리뉴 트라이패널 코튼 컬렉션 출시</a>
-           </li>
-           <li class="slider__item">
-             <a href="" class="slider__link">다채로운 컬러의 레인보우 컬렉션 출시</a>
-           </li>
-           <li class="slider__item">
-             <a href="" class="slider__link">새롭게 선보이는 썸머 티 컬렉션 출시</a>
-           </li>
-           <li class="slider__item">
-             <a href="" class="slider__link">어스톤 스웨이드 컬렉션 출시</a>
-           </li>
-         </ul>
-       </div>
 
-     </div>
-  </div>
-  
-  <header class="header">
-    <div class="header__inner">
-      <div class="header__left">
-        <button class="header__hambuger blind"><span>메뉴</span></button>
-        <a href="" class="header__logo">
-          <h1 class="blind">CONVERSE</h1>
-        </a>
-        <div class="header__category">
-          <ul class="category">
-            <li class="category__item">
-              <a href="" class="category__link">신발</a>
-            </li>
-            <li class="category__item">
-              <a href="" class="category__link">의류</a>
-            </li>
-            <li class="category__item">
-              <a href="" class="category__link">아동</a>
-            </li>
-            <li class="category__item">
-              <a href="" class="category__link">런칭캘린더</a>
-            </li>
-            <li class="category__item">
-              <a href="" class="category__link">회원전용</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="header__right">
-        <div class="header__menu">
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="" class="menu__link"><i class="menu__icon far fa-user"></i></a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="menu__link"><i class="menu__icon fas fa-shopping-cart"></i></a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="menu__link"><i class="menu__icon far fa-heart"></i></a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="menu__link"><i class="menu__icon far fa-question-circle"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="header__search">
-          <div class="search">
-            <button class="search__btn">
-              <span class="search__btn__icon search__btn__icon--times"></span>
-              <span class="search__btn__txt">검색</span>
-              <span class="search__btn__icon search__btn__icon--search"></span>
-            </button>
-      
-            <div class="search__dashboard">
-              <div class="dashboard dashboard--cols-112">
-               
-                <div class="dashboard__item">
-                  <div class="dashboard-item">
-                    <a href="" class="dashboard-item__link--block">
-                      <img src="img/03_Search_01_Banner_352x370.jpg" alt="" class="dashboard-item__img">
-                      <div class="dashboard-item__inner">
-                      	<span class="dashboard-item__title">썸머 티 컬렉션</span>
-                      </div>
-                      <div class="dashboard-item__overlay">
-                        <span class="dashboard-item__overlay-txt">더 알아보기</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                
-                <div class="dashboard__item dashboard__item--flex">
-                  <div class="dashboard-item dashboard-item--grow-1 dashboard-item--flex-center">
-                    <div class="dashboard-item__content">
-                      <p class="dashboard-item__subject">베스트셀러</p>
-                      <a href="" class="dashboard-item__link--txt">구매하기</a>
-                    </div>
-                  </div>
-                  <div class="dashboard-item dashboard-item--grow-1">
-                    <a href="" class="dashboard-item__link--block">
-                      <img src="img/03_Search_02_Banner_352x185.jpg" alt="" class="dashboard-item__img">
-                      <div class="dashboard-item__inner">
-                      	<span class="dashboard-item__title">회원전용상품</span>
-                      </div>
-                      <div class="dashboard-item__overlay">
-                        <span class="dashboard-item__overlay-txt">더 알아보기</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                
-                <div class="dashboard__item dashboard__item--border">
-                  <div class="dashboard-item">
-                  	<div class="dashboard-item__inner">
-                  		<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--size-40p dashboard-item__title--bold">검색</p>
-											<form action="" class="dashboard-item__form">
-												<input type="text" placeholder="검색어를 입력해주세요." class="dashboard-item__searchbar">
-												<button class="dashboard-item__searchbtn"><i class="fas fa-search"></i></button>
-											</form>
-                  	</div>
-                  </div>
-                </div>
-                
-                <div class="dashboard__item dashboard__item--flex">
-                  <div class="dashboard-item dashboard-item--grow-1 dashboard-item--flex-center">
-                    <div class="dashboard-item__content">
-                      <p class="dashboard-item__subject">무엇을 도와드릴까요?</p>
-                      <a href="" class="dashboard-item__link--txt">FAQ에서 궁금한 내용을 찾아보세요.</a>
-                    </div>
-                  </div>
-                  <div class="dashboard-item dashboard-item--grow-1">
-                    <a href="" class="dashboard-item__link--block">
-                      <img src="img/Search_03_Banner_352x185.jpg" alt="" class="dashboard-item__img">
-                      <div class="dashboard-item__inner">
-                      	<span class="dashboard-item__title dashboard-item__title--color-black">잭퍼셀 클래식 화이트</span>
-                      </div>
-                      <div class="dashboard-item__overlay">
-                        <span class="dashboard-item__overlay-txt">더 알아보기</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                
-                <div class="dashboard__item">
-                  <div class="dashboard-item">
-                    <a href="" class="dashboard-item__link--block">
-                      <img src="img/03_Search_01_Banner_352x370.gif" alt="" class="dashboard-item__img">
-                      <div class="dashboard-item__inner">
-                      	<span class="dashboard-item__title">잭퍼셀 시즈널</span>
-                      </div>
-                      <div class="dashboard-item__overlay">
-                        <span class="dashboard-item__overlay-txt">더 알아보기</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                
-                <div class="dashboard__item dashboard__item--border">
-                  <div class="dashboard-item">
-                   	<div class="dashboard-item__inner">
-											<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--size-40p dashboard-item__title--bold">인기 검색어</p>
-											<ul class="dashboard-item__list">
-												<li class="dashboard-item__item">
-													<a href="">척테일러</a>
-												</li>
-												<li class="dashboard-item__item">
-													<a href="">잭퍼셀</a>
-												</li>
-												<li class="dashboard-item__item">
-													<a href="">척 70</a>
-												</li>
-												<li class="dashboard-item__item">
-													<a href="">뮬</a>
-												</li>
-											</ul>
-                   	</div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            
-            <div class="search__layer"></div>
-            
-          </div>	
-        </div>
-      </div>
-			<div class="header__mobile">
-				<div class="mobile">
-					<div class="mobile__header">
-						<a href="" class="mobile__logo"></a>
-						<ul class="mobile__icons">
-							<li class="mobile__item"><a href="" class="mobile__icon"><i class="menu__icon fas fa-user"></i></a></li>
-							<li class="mobile__item"><a href="" class="mobile__icon"><i class="menu__icon fas fa-shopping-cart"></i></a></li>
-							<li class="mobile__item mobile__item--close"><a href="" class="mobile__icon"><i class="menu__icon fas fa-times"></i></a></li>
-						</ul>
-					</div>
-					<ul class="category category--mobile">
+<body>
+
+	<div class="notice">
+		<div class="notice__inner">
+			<div class="locate">
+				<img src="img/locale-kr.svg" alt="" class="locate__img">
+				<div class="locate__lan">
+					<span class="locate__lan__abbr">KR</span>
+					<span class="locate__lan__native">한국어</span>
+				</div>
+			</div>
+			<div class="notice__slider">
+				<ul class="slider">
+					<li class="slider__item">
+						<a href="" class="slider__link">리뉴 트라이패널 코튼 컬렉션 출시</a>
+					</li>
+					<li class="slider__item">
+						<a href="" class="slider__link">다채로운 컬러의 레인보우 컬렉션 출시</a>
+					</li>
+					<li class="slider__item">
+						<a href="" class="slider__link">새롭게 선보이는 썸머 티 컬렉션 출시</a>
+					</li>
+					<li class="slider__item">
+						<a href="" class="slider__link">어스톤 스웨이드 컬렉션 출시</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="mobile">
+		<div class="mobile__header">
+			<a href="" class="mobile__logo"></a>
+			<ul class="mobile__icons">
+				<li class="mobile__item"><a href="" class="mobile__icon"><i class="menu__icon fas fa-user"></i></a></li>
+				<li class="mobile__item"><a href="" class="mobile__icon"><i class="menu__icon fas fa-shopping-cart"></i></a></li>
+				<li class="mobile__item mobile__item--close"><a href="" class="mobile__icon"><i class="menu__icon fas fa-times"></i></a></li>
+			</ul>
+		</div>
+		<ul class="category category--mobile">
+			<li class="category__item">
+				<a href="" class="category__link">신발</a>
+			</li>
+			<li class="category__item">
+				<a href="" class="category__link">의류</a>
+			</li>
+			<li class="category__item">
+				<a href="" class="category__link">아동</a>
+			</li>
+			<li class="category__item">
+				<a href="" class="category__link">런칭캘린더</a>
+			</li>
+			<li class="category__item">
+				<a href="" class="category__link">회원전용</a>
+			</li>
+		</ul>
+		<div class="mobile__private">
+			<ul class="private">
+				<li class="private__item">
+					<a href="" class="private__link">
+						<span class="private__txt">마이페이지</span>
+					</a>
+				</li>
+				<li class="private__item">
+					<a href="" class="private__link">
+						<span class="private__txt">주문/배송 조회</span>
+					</a>
+				</li>
+				<li class="private__item">
+					<a href="" class="private__link">
+						<span class="private__txt">고객지원센터</span>
+					</a>
+				</li>
+				<li class="private__item">
+					<a href="" class="private__link">
+						<span class="private__txt">로그인</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="mobile__accordion">
+			<div class="accordion">
+				<div class="accordion__inner">
+					<h4 class="accordion__title">FAMILY SITES</h4>
+					<ul class="accordion__list">
+						<li class="accordion__listitem"><a href="" class="accordion__link">NIKE</a></li>
+						<li class="accordion__listitem"><a href="" class="accordion__link">Jordan</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mobile__address">
+			<adress class="address">
+				<span class="address__txt">(유)컨버스코리아</span>
+				<span class="address__txt">대표 주형준</span>
+				<span class="address__txt">개인정보책임 주형준</span>
+				<span class="address__txt">사업자등록번호 220-88-74818</span>
+				<span class="address__txt">통신판매업 신고번호: 제 2016-서울강남-00478호</span>
+				<a href="" class="address__link">통신판매업자 신원정보 확인</a>
+				<span class="address__txt">주소: 서울시 강남구 테헤란로 152 강남파이낸스센터 30F</span>
+				<span class="address__txt">고객상담팀: 080-987-0182</span>
+				<span class="address__txt">(상담시간 월·금 : AM 09:00 · PM 05:30, 주말/공휴일 휴무)</span>
+				<a href="" class="address__link address__link--24h">conversekorea@converse.co.kr</a>
+				<span class="address__txt address__copyright">2020 Converse Korea LLC. ALL Rights Reserved.</span>
+			</adress>
+		</div>
+		<div class="mobile__locate">
+			<div class="locate locate--mobile">
+				<img src="img/locale-kr.svg" alt="" class="locate__img">
+				<div class="locate__lan locate__lan--color-white">
+					<span class="locate__lan__abbr">KR</span>
+					<span class="locate__lan__native">한국어</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="header__inner">
+			<div class="header__left">
+				<button class="header__hambuger blind"><span>메뉴</span></button>
+				<a href="" class="header__logo">
+					<h1 class="blind">CONVERSE</h1>
+				</a>
+				<div class="header__category">
+					<ul class="category">
 						<li class="category__item">
 							<a href="" class="category__link">신발</a>
 						</li>
@@ -232,548 +154,612 @@
 							<a href="" class="category__link">회원전용</a>
 						</li>
 					</ul>
-					<div class="mobile__private">
-						<ul class="private">
-							<li class="private__item">
-								<a href="" class="private__link">
-									<span class="private__txt">마이페이지</span>
-								</a>
-							</li>
-							<li class="private__item">
-								<a href="" class="private__link">
-									<span class="private__txt">주문/배송 조회</span>
-								</a>
-							</li>
-							<li class="private__item">
-								<a href="" class="private__link">
-									<span class="private__txt">고객지원센터</span>
-								</a>
-							</li>
-							<li class="private__item">
-								<a href="" class="private__link">
-									<span class="private__txt">로그인</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="mobile__accordion">
-						<div class="accordion">
-							 <div class="accordion__inner">
-									<h4 class="accordion__title">FAMILY SITES</h4>
-									<ul class="accordion__list">
-										<li class="accordion__listitem"><a href="" class="accordion__link">NIKE</a></li>
-										<li class="accordion__listitem"><a href="" class="accordion__link">Jordan</a></li>
-									</ul>  
-							 </div>
-						</div>
-					</div>
-					<div class="mobile__address">
-					 <adress class="address">
-						 <span class="address__txt">(유)컨버스코리아</span>
-						 <span class="address__txt">대표 주형준</span>
-						 <span class="address__txt">개인정보책임 주형준</span>
-						 <span class="address__txt">사업자등록번호 220-88-74818</span>
-						 <span class="address__txt">통신판매업 신고번호: 제 2016-서울강남-00478호</span>
-						 <a href="" class="address__link">통신판매업자 신원정보 확인</a>
-						 <span class="address__txt">주소: 서울시 강남구 테헤란로 152 강남파이낸스센터 30F</span>
-						 <span class="address__txt">고객상담팀: 080-987-0182</span>
-						 <span class="address__txt">(상담시간 월·금 : AM 09:00 · PM 05:30, 주말/공휴일 휴무)</span>
-						 <a href="" class="address__link address__link--24h">conversekorea@converse.co.kr</a>
-						 <span class="address__txt address__copyright">2020 Converse Korea LLC. ALL Rights Reserved.</span>
-					 </adress>
-					</div>
-					<div class="mobile__locate">
-						 <div class="locate locate--mobile">
-							 <img src="img/locale-kr.svg" alt="" class="locate__img">
-							 <div class="locate__lan locate__lan--color-white">
-								 <span class="locate__lan__abbr">KR</span>
-								 <span class="locate__lan__native">한국어</span>
-							 </div>
-						 </div>
-					 </div>
 				</div>
 			</div>
-    </div>
-  </header>
-  
-  <main class="main">
-      <section class="section section--01">
-        <div class="dashboard dashboard--cols-1 dashboard--rows-1">
-        	<div class="dashboard__item">
-        		<div class="dashboard-item">
+			<div class="header__right">
+				<div class="header__menu">
+					<ul class="menu">
+						<li class="menu__item">
+							<a href="" class="menu__link"><i class="menu__icon far fa-user"></i></a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link"><i class="menu__icon fas fa-shopping-cart"></i></a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link"><i class="menu__icon far fa-heart"></i></a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link"><i class="menu__icon far fa-question-circle"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__search">
+					<div class="search">
+						<button class="search__btn">
+							<span class="search__btn__icon search__btn__icon--times"></span>
+							<span class="search__btn__txt">검색</span>
+							<span class="search__btn__icon search__btn__icon--search"></span>
+						</button>
+
+						<div class="search__dashboard">
+							<div class="dashboard dashboard--cols-112">
+
+								<div class="dashboard__item">
+									<div class="dashboard-item">
+										<a href="" class="dashboard-item__link--block">
+											<img src="img/03_Search_01_Banner_352x370.jpg" alt="" class="dashboard-item__img">
+											<div class="dashboard-item__inner">
+												<span class="dashboard-item__title">썸머 티 컬렉션</span>
+											</div>
+											<div class="dashboard-item__overlay">
+												<span class="dashboard-item__overlay-txt">더 알아보기</span>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="dashboard__item dashboard__item--flex">
+									<div class="dashboard-item dashboard-item--grow-1 dashboard-item--flex-center">
+										<div class="dashboard-item__content">
+											<p class="dashboard-item__subject">베스트셀러</p>
+											<a href="" class="dashboard-item__link--txt">구매하기</a>
+										</div>
+									</div>
+									<div class="dashboard-item dashboard-item--grow-1">
+										<a href="" class="dashboard-item__link--block">
+											<img src="img/03_Search_02_Banner_352x185.jpg" alt="" class="dashboard-item__img">
+											<div class="dashboard-item__inner">
+												<span class="dashboard-item__title">회원전용상품</span>
+											</div>
+											<div class="dashboard-item__overlay">
+												<span class="dashboard-item__overlay-txt">더 알아보기</span>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="dashboard__item dashboard__item--border">
+									<div class="dashboard-item">
+										<div class="dashboard-item__inner">
+											<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--size-40p dashboard-item__title--bold">검색</p>
+											<form action="" class="dashboard-item__form">
+												<input type="text" placeholder="검색어를 입력해주세요." class="dashboard-item__searchbar">
+												<button class="dashboard-item__searchbtn"><i class="fas fa-search"></i></button>
+											</form>
+										</div>
+									</div>
+								</div>
+
+								<div class="dashboard__item dashboard__item--flex">
+									<div class="dashboard-item dashboard-item--grow-1 dashboard-item--flex-center">
+										<div class="dashboard-item__content">
+											<p class="dashboard-item__subject">무엇을 도와드릴까요?</p>
+											<a href="" class="dashboard-item__link--txt">FAQ에서 궁금한 내용을 찾아보세요.</a>
+										</div>
+									</div>
+									<div class="dashboard-item dashboard-item--grow-1">
+										<a href="" class="dashboard-item__link--block">
+											<img src="img/Search_03_Banner_352x185.jpg" alt="" class="dashboard-item__img">
+											<div class="dashboard-item__inner">
+												<span class="dashboard-item__title dashboard-item__title--color-black">잭퍼셀 클래식 화이트</span>
+											</div>
+											<div class="dashboard-item__overlay">
+												<span class="dashboard-item__overlay-txt">더 알아보기</span>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="dashboard__item">
+									<div class="dashboard-item">
+										<a href="" class="dashboard-item__link--block">
+											<img src="img/03_Search_01_Banner_352x370.gif" alt="" class="dashboard-item__img">
+											<div class="dashboard-item__inner">
+												<span class="dashboard-item__title">잭퍼셀 시즈널</span>
+											</div>
+											<div class="dashboard-item__overlay">
+												<span class="dashboard-item__overlay-txt">더 알아보기</span>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="dashboard__item dashboard__item--border">
+									<div class="dashboard-item">
+										<div class="dashboard-item__inner">
+											<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--size-40p dashboard-item__title--bold">인기 검색어</p>
+											<ul class="dashboard-item__list">
+												<li class="dashboard-item__item">
+													<a href="">척테일러</a>
+												</li>
+												<li class="dashboard-item__item">
+													<a href="">잭퍼셀</a>
+												</li>
+												<li class="dashboard-item__item">
+													<a href="">척 70</a>
+												</li>
+												<li class="dashboard-item__item">
+													<a href="">뮬</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="search__layer"></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="section section--01">
+			<div class="dashboard dashboard--cols-1 dashboard--rows-1">
+				<div class="dashboard__item">
+					<div class="dashboard-item">
 						<img src="img/KakaoTalk_20200601_100734242.jpg" alt="" class="dashboard-item__img">
-        			<div class="dashboard-item__inner dashboard-item__inner--flex dashboard-item__inner--flex-right">
-        				<h2 class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--size-50p">
-								RAINBOW<br/>
+						<div class="dashboard-item__inner dashboard-item__inner--flex dashboard-item__inner--flex-right">
+							<h2 class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--size-50p">
+								RAINBOW<br />
 								COLLECTION
-								</h2>
-								<p class="dashboard-item__des dashboard-item__des--color-black">
-									다양한 색으로 일상에 즐거움을 주는<br/>
-									컬러풀한 레인보우 컬렉션을 선보입니다.
-								</p>
-								<a href="" class="dashboard-item__btn"><span>더 알아보기</span></a>
-        			</div>
-        			<a href="" class="dashboard-item__btn dashboard-item__btn--mobile"><span>더 알아보기</span></a>
-        		</div>
-        	</div>
-        </div>
-      </section>
-      <section class="section section--02 section--flex">
-        <div class="section__content">
-          <h2 class="section__title section__title--36p">CHOOSE YOUR ICON</h2>
-          <a href="" class="section__link section__link--more">신발 전체 보기</a>
-          <ul class="section__list">
-            <li class="section__item">
-              <a href="" class="section__item-link">
-                <img src="img/%ED%99%94%EC%9D%B4%ED%8A%B8_%EC%B2%99%ED%85%8C%EC%9D%BC%EB%9F%AC%EC%98%AC%EC%8A%A4%ED%83%80.jpg" alt="" class="section__item-img">
-                <p class="section__item-name">척테일러 올스타</p>
-              </a>
-            </li>
-            <li class="section__item">
-              <a href="" class="section__item-link">
-                <img src="img/%ED%99%94%EC%9D%B4%ED%8A%B8_%EC%B2%99702.jpg" alt="" class="section__item-img">
-                <p class="section__item-name">척 70</p>
-              </a>
-            </li>
-            <li class="section__item">
-              <a href="" class="section__item-link">
-                <img src="img/%ED%99%94%EC%9D%B4%ED%8A%B8_%EC%9B%90%EC%8A%A4%ED%83%80.jpg" alt="" class="section__item-img">
-                <p class="section__item-name">원스타</p>
-              </a>
-            </li>
-            <li class="section__item">
-              <a href="" class="section__item-link">
-                <img src="img/%ED%99%94%EC%9D%B4%ED%8A%B8_%EC%9E%AD%ED%8D%BC%EC%85%80.jpg" alt="" class="section__item-img">
-                <p class="section__item-name">잭퍼셀</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="section section--03">
-        <div class="dashboard dashboard--cols-1 dashboard--rows-1">
-        	<div class="dashboard__item">
-        		<div class="dashboard-item">
+							</h2>
+							<p class="dashboard-item__des dashboard-item__des--color-black">
+								다양한 색으로 일상에 즐거움을 주는<br />
+								컬러풀한 레인보우 컬렉션을 선보입니다.
+							</p>
+							<a href="" class="dashboard-item__btn"><span>더 알아보기</span></a>
+						</div>
+						<a href="" class="dashboard-item__btn dashboard-item__btn--mobile"><span>더 알아보기</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section--02 section--flex">
+			<div class="section__content">
+				<h2 class="section__title">CHOOSE YOUR ICON</h2>
+				<a href="" class="section__link section__link--more">신발 전체 보기</a>
+				<ul class="section__list">
+					<li class="section__item">
+						<a href="" class="section__item-link">
+							<img src="img/%ED%99%94%EC%9D%B4%ED%8A%B8_%EC%B2%99%ED%85%8C%EC%9D%BC%EB%9F%AC%EC%98%AC%EC%8A%A4%ED%83%80.jpg" alt="" class="section__item-img">
+							<p class="section__item-name">척테일러 올스타</p>
+						</a>
+					</li>
+					<li class="section__item">
+						<a href="" class="section__item-link">
+							<img src="img/%ED%99%94%EC%9D%B4%ED%8A%B8_%EC%B2%99702.jpg" alt="" class="section__item-img">
+							<p class="section__item-name">척 70</p>
+						</a>
+					</li>
+					<li class="section__item">
+						<a href="" class="section__item-link">
+							<img src="img/%ED%99%94%EC%9D%B4%ED%8A%B8_%EC%9B%90%EC%8A%A4%ED%83%80.jpg" alt="" class="section__item-img">
+							<p class="section__item-name">원스타</p>
+						</a>
+					</li>
+					<li class="section__item">
+						<a href="" class="section__item-link">
+							<img src="img/%ED%99%94%EC%9D%B4%ED%8A%B8_%EC%9E%AD%ED%8D%BC%EC%85%80.jpg" alt="" class="section__item-img">
+							<p class="section__item-name">잭퍼셀</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="section section--03">
+			<div class="dashboard dashboard--cols-1 dashboard--rows-1">
+				<div class="dashboard__item">
+					<div class="dashboard-item">
 						<img src="img/Home_02_1440x900.jpg" alt="" class="dashboard-item__img">
-        			<div class="dashboard-item__inner dashboard-item__inner--flex dashboard-item__inner--flex-right">
-        				<h2 class="dashboard-item__title dashboard-item__title--color-violet dashboard-item__title--size-50p">
-								RENEW TRIPANEL<br/>
+						<div class="dashboard-item__inner dashboard-item__inner--flex dashboard-item__inner--flex-right">
+							<h2 class="dashboard-item__title dashboard-item__title--color-violet dashboard-item__title--size-50p">
+								RENEW TRIPANEL<br />
 								COTTON COLLECTION
-								</h2>
-								<p class="dashboard-item__des dashboard-item__des--color-violet">
-									지속가능한 미래를 향한 컨버스의 움직임,<br/>
-									리뉴 트라이패널 코튼 컬렉션을 만나보세요.
-								</p>
-								<a href="" class="dashboard-item__btn dashboard-item__btn--color-violet"><span>더 알아보기</span></a>
-        			</div>
-        			<a href="" class="dashboard-item__btn dashboard-item__btn--mobile"><span>더 알아보기</span></a>
-        		</div>
-        	</div>
-        </div>
-      </section>
-      <section class="section section--04 section--flex">
-        <div class="dashboard dashboard--cols-1 dashboard--rows-1">
-        	<div class="dashboard__item">
-        		<div class="dashboard-item">
+							</h2>
+							<p class="dashboard-item__des dashboard-item__des--color-violet">
+								지속가능한 미래를 향한 컨버스의 움직임,<br />
+								리뉴 트라이패널 코튼 컬렉션을 만나보세요.
+							</p>
+							<a href="" class="dashboard-item__btn dashboard-item__btn--color-violet"><span>더 알아보기</span></a>
+						</div>
+						<a href="" class="dashboard-item__btn dashboard-item__btn--mobile"><span>더 알아보기</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section--04 section--flex">
+			<div class="dashboard dashboard--cols-1 dashboard--rows-1">
+				<div class="dashboard__item">
+					<div class="dashboard-item">
 						<img src="img/Home_02_1440x900.gif" alt="" class="dashboard-item__img">
-        			<div class="dashboard-item__inner dashboard-item__inner--flex dashboard-item__inner--flex-left">
-        				<h2 class="dashboard-item__title dashboard-item__title--color-blue dashboard-item__title--size-50p">
-								RENEW TRIPANEL<br/>
+						<div class="dashboard-item__inner dashboard-item__inner--flex dashboard-item__inner--flex-left">
+							<h2 class="dashboard-item__title dashboard-item__title--color-blue dashboard-item__title--size-50p">
+								RENEW TRIPANEL<br />
 								COTTON COLLECTION
-								</h2>
-								<p class="dashboard-item__des dashboard-item__des--color-blue">
-									지속가능한 미래를 향한 컨버스의 움직임,<br/>
-									리뉴 트라이패널 코튼 컬렉션을 만나보세요.
-								</p>
-								<a href="" class="dashboard-item__btn dashboard-item__btn--color-blue"><span>더 알아보기</span></a>
-        			</div>
-        			<a href="" class="dashboard-item__btn dashboard-item__btn--mobile"><span>더 알아보기</span></a>
-        		</div>
-        	</div>
-        </div>
-      </section>
-      <section class="section section--05">
-        <div class="dashboard dashboard--cols-112 dashboard--rows-1">
-          <div class="dashboard__item">
-            <div class="dashboard-item dashboard-item">
-              <a href="" class="dashboard-item__link--block">
-                <img class="dashboard-item__img" src="img/720x900_02.jpg">
-                <div class="dashboard-item__inner">
-                	<p class="dashboard-item__title dashboard-item__title--color-black">토탈오렌지</p>
-             		</div>
-								<div class="dashboard-item__overlay">
-									<span class="dashboard-item__overlay-txt dashboard-item__overlay-txt--center">구매하기</span>
-								</div>
-              </a>
-            </div>
-          </div>
-          <div class="dashboard__item">
-            <div class="dashboard-item dashboard-item">
-              <a href="" class="dashboard-item__link--block">
-                <img class="dashboard-item__img" src="img/720x900_01.jpg">
-                <div class="dashboard-item__inner">
-                	<p class="dashboard-item__title dashboard-item__title--color-black">문스톤바이올렛</p>
-                </div>
-                <div class="dashboard-item__overlay">
-                  <span class="dashboard-item__overlay-txt dashboard-item__overlay-txt--center">구매하기</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="dashboard__item dashboard__item--mobilecol-13">
-            <div class="dashboard-item">
-                <img class="dashboard-item__img" src="img/01_Home_04_Template_1440x900_Big.jpg">
-                <div class="dashboard-item__inner">
-									<p class="dashboard-item__title dashboard-item__title--size-50p dashboard-item__title--bold">SEASONAL COLOR<br/>COLLECTION</p>
-									<p class="dashboard-item__des">늘 함께하던 편안한 스니커즈에 트렌디한 컬러감을 더할 때,<br/>컨버스 시즈널 컬러 컬렉션이 완성됩니다.</p>
-									<span class="dashboard-item__link--txt dashboard-item__link--color-white">구매하기</span>
-                </div>
-                <a href="" class="dashboard-item__btn dashboard-item__btn--mobile"><span>더 알아보기</span></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section section--06">
-      	<div class="dashboard dashboard--cols-211">
-         
-          <div class="dashboard__item dashboard__item--row-2 dashboard__item--mobilecol-13">
-            <div class="dashboard-item">
-              <a href="" class="dashboard-item__link--block">
-                <img class="dashboard-item__img" src="img/Home_01_1440x1800.gif">
-                <div class="dashboard-item__inner">
-                	<p class="dashboard-item__title">올스타 프로 BB 서머 리그</p>	
-                </div>
-                <div class="dashboard-item__overlay">
-                  <span class="dashboard-item__overlay-txt">BE THE FIRST.</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="dashboard__item dashboard__item--col-24 dashboard__item--mobilecol-13">
-            <div class="dashboard-item">
-							<img class="dashboard-item__img" src="img/Home_02_1440x900%20(1).jpg">
-							<div class="dashboard-item__inner">
-								<p class="dashboard-item__foreword">NOW AVAILABLE</p>
-								<p class="dashboard-item__title dashboard-item__title--size-50p dashboard-item__title--bold">ALL STAR PRO BB<br/>SUMMER LEAGUE</p>
-								<p class="dashboard-item__des">모던한 멀티 농구선수를 위한 엘리트 농구화 '올스타 프로 BB'를<br/>여름 시즌 새로운 컬러로 선보입니다.</p>
-								<span class="dashboard-item__link--txt dashboard-item__link--color-white">구매하기</span>
-							</div>
-              <a href="" class="dashboard-item__btn dashboard-item__btn--mobile"><span>더 알아보기</span></a>
+							</h2>
+							<p class="dashboard-item__des dashboard-item__des--color-blue">
+								지속가능한 미래를 향한 컨버스의 움직임,<br />
+								리뉴 트라이패널 코튼 컬렉션을 만나보세요.
+							</p>
+							<a href="" class="dashboard-item__btn dashboard-item__btn--color-blue"><span>더 알아보기</span></a>
 						</div>
-          </div>
-          <div class="dashboard__item">
-            <div class="dashboard-item">
-							<a href="" class="dashboard-item__link--block">
-								<img class="dashboard-item__img dashboard-item__img--state-primary" src="img/167936C_167936C_primary.jpg">
-								<img class="dashboard-item__img dashboard-item__img--state-hover" src="img/167936C_167936C_hover.jpg">
-								<div class="dashboard-item__inner">
-									<button class="dashboard-item__heart blind"><span>하트</span></button>
-									<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--bold dashboard-item__title--right">NEW ARRIVAL</p>
-									<div class="dashboard-item__info">
-										<a href="" class="dashboard-item__name">올스타 프로 BB 서머 리그</a>
-										<p class="dashboard-item__value">149,000 원</p>
-									</div>
-								</div>
-							</a>
-            </div>
-          </div>
-          <div class="dashboard__item">
-            <div class="dashboard-item">
-							<a href="" class="dashboard-item__link--block">
-								<img class="dashboard-item__img dashboard-item__img--state-primary" src="img/167937C_167937C_primary.jpg">
-								<img class="dashboard-item__img dashboard-item__img--state-hover" src="img/167937C_167937C_hover.jpg">
-								<div class="dashboard-item__inner">
-									<button class="dashboard-item__heart blind"><span>하트</span></button>
-									<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--bold dashboard-item__title--right">NEW ARRIVAL</p>
-									<div class="dashboard-item__info">
-										<a href="" class="dashboard-item__name">올스타 프로 BB 서머 리그</a>
-										<p class="dashboard-item__value">139,000 원</p>
-									</div>
-								</div>
-							</a>
-            </div>
-          </div>
-      	</div>
-      </section>
-      <section class="section section--07">
-      	<div class="dashboard dashboard--cols-112">
-         
-          <div class="dashboard__item dashboard__item--col-13 dashboard__item--mobilecol-13">
-            <div class="dashboard-item">
-							<img class="dashboard-item__img" src="img/Home_02_1440x900%20(1).gif">
+						<a href="" class="dashboard-item__btn dashboard-item__btn--mobile"><span>더 알아보기</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section--05">
+			<div class="dashboard dashboard--rows-1 dashboard--mobilecols-1">
+				<div class="dashboard__item dashboard__item--flex-row">
+					<div class="dashboard-item">
+						<a href="" class="dashboard-item__link--block">
+							<img class="dashboard-item__img" src="img/720x900_02.jpg">
 							<div class="dashboard-item__inner">
-								<p class="dashboard-item__foreword">NOW AVAILABLE</p>
-								<p class="dashboard-item__title dashboard-item__title--size-50p dashboard-item__title--bold">DAINTY SUMMER GATAWAY</p>
-								<p class="dashboard-item__des">클래식한 디자인에 위빙 디테일이 적용된 어퍼와<br/>슬림한 실루엣이 특징인 2020년 여름 시즌 신상품을 만나보세요.</p>
-								<span class="dashboard-item__link--txt dashboard-item__link--color-white">구매하기</span>
-              </div>
-              <a href="" class="dashboard-item__btn dashboard-item__btn--mobile"><span>더 알아보기</span></a>
-						</div>
-          </div>
-          <div class="dashboard__item dashboard__item--row-2 dashboard__item--col-34 dashboard__item--mobilecol-13">
-            <div class="dashboard-item">
-              <img class="dashboard-item__img" src="img/Home_01_1440x1800.jpg">
-              <div class="dashboard-item__inner">
-								<p class="dashboard-item__title">척테일러 올스타 데인티 서머 겟어웨이</p>	
-              </div>
-            </div>
-          </div>
-          <div class="dashboard__item">
-            <div class="dashboard-item">
-							<a href="" class="dashboard-item__link--block">
-								<img class="dashboard-item__img dashboard-item__img--state-primary" src="img/567695C_567695C_primary.jpg">
-								<img class="dashboard-item__img dashboard-item__img--state-hover" src="img/567695C_567695C_hover.jpg">
-								<div class="dashboard-item__inner">
-									<button class="dashboard-item__heart blind"><span>하트</span></button>
-									<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--bold dashboard-item__title--right">NEW ARRIVAL</p>
-									<div class="dashboard-item__info">
-										<a href="" class="dashboard-item__name">척테일러 올스타 데인티 서머 겟어웨이</a>
-										<p class="dashboard-item__value">59,000 원</p>
-									</div>
-								</div>
-							</a>
-            </div>
-          </div>
-          <div class="dashboard__item">
-            <div class="dashboard-item">
-							<a href="" class="dashboard-item__link--block">
-								<img class="dashboard-item__img dashboard-item__img--state-primary" src="img/567694C_567694C_primary.jpg">
-								<img class="dashboard-item__img dashboard-item__img--state-hover" src="img/567694C_567694C_hover.jpg">
-								<div class="dashboard-item__inner">
-									<button class="dashboard-item__heart blind"><span>하트</span></button>
-									<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--bold dashboard-item__title--right">NEW ARRIVAL</p>
-									<div class="dashboard-item__info">
-										<a href="" class="dashboard-item__name">척테일러 올스타 데인티 서머 겟어웨이</a>
-										<p class="dashboard-item__value">59,000 원</p>
-									</div>
-								</div>
-							</a>
-            </div>
-          </div>
-          
-      	</div>
-      </section>
-      <section class="section section--08">
-      	<div class="dashboard dashboard--cols-1111">
-      		
-          <div class="dashboard__item dashboard__item--col-13 dashboard__item--mobilecol-13">
-            <div class="dashboard-item">
-								<img class="dashboard-item__img" src="img/Home_02_1440x900_1.jpg">
-            </div>
-          </div>
-      		
-      		<div class="dashboard__item dashboard__item--col-35 dashboard__item--mobilecol-13">
-            <div class="dashboard-item">
-            	<img src="img/Home_02_1440x900_2.jpg" alt="" class="dashboard-item__img">
-							<div class="dashboard-item__inner dashboard-item__inner--flex">
-								<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--size-50p dashboard-item__title--bold">WEEKEND FUN</p>
-								<p class="dashboard-item__des dashboard-item__des--color-black">
-									최고의 주말은 별 거 없어.<br/>
-									편하게 티셔츠 하나 입고,<br/>
-									친한 친구 불러서 노는 거야
-								</p>
-								<a href="" class="dashboard-item__link--txt"><span>썸머 티 컬렉션 보러가기</span></a>
+								<p class="dashboard-item__title dashboard-item__title--color-black">토탈오렌지</p>
 							</div>
-            </div>
-          </div>
-      		
-          <div class="dashboard__item">
-            <div class="dashboard-item">
-							<a href="" class="dashboard-item__link--block">
-								<img class="dashboard-item__img dashboard-item__img--state-primary" src="img/10020931-A04_10020931-A04_primary.jpg">
-								<img class="dashboard-item__img dashboard-item__img--state-hover" src="img/10020931-A04_10020931-A04_hover.jpg">
-								<div class="dashboard-item__inner">
-									<button class="dashboard-item__heart blind"><span>하트</span></button>
-									<div class="dashboard-item__info">
-										<a href="" class="dashboard-item__name">척테일러 슈 패치 티</a>
-										<p class="dashboard-item__value">35,000 원</p>
-									</div>
+							<div class="dashboard-item__overlay">
+								<span class="dashboard-item__overlay-txt dashboard-item__overlay-txt--center">구매하기</span>
+							</div>
+						</a>
+					</div>
+					<div class="dashboard-item">
+						<a href="" class="dashboard-item__link--block">
+							<img class="dashboard-item__img" src="img/720x900_01.jpg">
+							<div class="dashboard-item__inner">
+								<p class="dashboard-item__title dashboard-item__title--color-black">문스톤바이올렛</p>
+							</div>
+							<div class="dashboard-item__overlay">
+								<span class="dashboard-item__overlay-txt dashboard-item__overlay-txt--center">구매하기</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="dashboard__item dashboard__item--mobilecol-13">
+					<div class="dashboard-item">
+						<img class="dashboard-item__img" src="img/01_Home_04_Template_1440x900_Big.jpg">
+						<div class="dashboard-item__inner">
+							<p class="dashboard-item__title dashboard-item__title--size-50p dashboard-item__title--bold">SEASONAL COLOR<br />COLLECTION</p>
+							<p class="dashboard-item__des">늘 함께하던 편안한 스니커즈에 트렌디한 컬러감을 더할 때,<br />컨버스 시즈널 컬러 컬렉션이 완성됩니다.</p>
+							<span class="dashboard-item__link--txt dashboard-item__link--color-white">구매하기</span>
+						</div>
+						<a href="" class="dashboard-item__btn dashboard-item__btn--mobile"><span>더 알아보기</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section--06">
+			<div class="dashboard dashboard--mobilecols-1">
+
+				<div class="dashboard__item dashboard__item--row-2 dashboard__item--mobilecol-13">
+					<div class="dashboard-item">
+						<a href="" class="dashboard-item__link--block">
+							<img class="dashboard-item__img" src="img/Home_01_1440x1800.gif">
+							<div class="dashboard-item__inner">
+								<p class="dashboard-item__title">올스타 프로 BB 서머 리그</p>
+							</div>
+							<div class="dashboard-item__overlay">
+								<span class="dashboard-item__overlay-txt">BE THE FIRST.</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="dashboard__item dashboard__item--col-24 dashboard__item--mobilecol-13">
+					<div class="dashboard-item">
+						<img class="dashboard-item__img" src="img/Home_02_1440x900%20(1).jpg">
+						<div class="dashboard-item__inner">
+							<p class="dashboard-item__foreword">NOW AVAILABLE</p>
+							<p class="dashboard-item__title dashboard-item__title--size-50p dashboard-item__title--bold">ALL STAR PRO BB<br />SUMMER LEAGUE</p>
+							<p class="dashboard-item__des">모던한 멀티 농구선수를 위한 엘리트 농구화 '올스타 프로 BB'를<br />여름 시즌 새로운 컬러로 선보입니다.</p>
+							<span class="dashboard-item__link--txt dashboard-item__link--color-white">구매하기</span>
+						</div>
+						<a href="" class="dashboard-item__btn dashboard-item__btn--mobile"><span>더 알아보기</span></a>
+					</div>
+				</div>
+				<div class="dashboard__item dashboard__item--flex-row">
+					<div class="dashboard-item">
+						<a href="" class="dashboard-item__link--block">
+							<img class="dashboard-item__img dashboard-item__img--state-primary" src="img/167936C_167936C_primary.jpg">
+							<img class="dashboard-item__img dashboard-item__img--state-hover" src="img/167936C_167936C_hover.jpg">
+							<div class="dashboard-item__inner">
+								<button class="dashboard-item__heart blind"><span>하트</span></button>
+								<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--bold dashboard-item__title--right">NEW ARRIVAL</p>
+								<div class="dashboard-item__info">
+									<a href="" class="dashboard-item__name">올스타 프로 BB 서머 리그</a>
+									<p class="dashboard-item__value">149,000 원</p>
 								</div>
-							</a>
-            </div>
-          </div>
-      		
-          <div class="dashboard__item">
-            <div class="dashboard-item dashboard-item">
-              <a href="" class="dashboard-item__link--block">
-                <img class="dashboard-item__img" src="img/티 메인2.gif">
-                <div class="dashboard-item__inner">
-                	<p class="dashboard-item__title">척테일러 슈 패치 티</p>
-                </div>
-                <div class="dashboard-item__overlay">
-                  <span class="dashboard-item__overlay-txt dashboard-item__overlay-txt--center">구매하기</span>
-                </div>
-              </a>
-            </div>
-          </div>
-      		
-          <div class="dashboard__item">
-            <div class="dashboard-item">
-							<a href="" class="dashboard-item__link--block">
-								<img class="dashboard-item__img dashboard-item__img--state-primary" src="img/10018347-A05_10018347-A05_primary.jpg">
-								<img class="dashboard-item__img dashboard-item__img--state-hover" src="img/10018347-A05_10018347-A05_hover.jpg">
-								<div class="dashboard-item__inner">
-									<button class="dashboard-item__heart blind"><span>하트</span></button>
-									<div class="dashboard-item__info">
-										<a href="" class="dashboard-item__name">올스타 오버사이즈 티</a>
-										<p class="dashboard-item__value">39,000 원</p>
-									</div>
+							</div>
+						</a>
+					</div>
+					<div class="dashboard-item">
+						<a href="" class="dashboard-item__link--block">
+							<img class="dashboard-item__img dashboard-item__img--state-primary" src="img/167937C_167937C_primary.jpg">
+							<img class="dashboard-item__img dashboard-item__img--state-hover" src="img/167937C_167937C_hover.jpg">
+							<div class="dashboard-item__inner">
+								<button class="dashboard-item__heart blind"><span>하트</span></button>
+								<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--bold dashboard-item__title--right">NEW ARRIVAL</p>
+								<div class="dashboard-item__info">
+									<a href="" class="dashboard-item__name">올스타 프로 BB 서머 리그</a>
+									<p class="dashboard-item__value">139,000 원</p>
 								</div>
-							</a>
-            </div>
-          </div>
-      		
-          <div class="dashboard__item">
-            <div class="dashboard-item dashboard-item">
-              <a href="" class="dashboard-item__link--block">
-                <img class="dashboard-item__img" src="img/720x900_02%20(1).jpg">
-                <div class="dashboard-item__inner">
-                	<p class="dashboard-item__title">올스타 오버사이즈 티</p>
-                </div>
-                <div class="dashboard-item__overlay">
-                  <span class="dashboard-item__overlay-txt dashboard-item__overlay-txt--center">구매하기</span>
-                </div>
-              </a>
-            </div>
-          </div>
-      		
-      	</div>
-      </section>
-      <section class="section section--09">
-      	<div class="dashboard dashboard__cols-11"></div>
-      </section>
-      <section class="section section--10">
-      	<ul class="service">
-      		<li class="service__item">
-      			<div class="service__content">
-      				<img src="img/icon_free-del.png" alt="무료배송 아이콘" class="service__icon">
-      				<h4 class="service__title">무료배송</h4>
-      				<p class="service__des">5만원 이상 구매 시 무료배송</p>
-      			</div>
-      		</li>
-      		<li class="service__item">
-      			<div class="service__content">
-      				<img src="img/icon-return.png" alt="반품 아이콘" class="service__icon">
-      				<h4 class="service__title">반품 서비스</h4>
-      				<p class="service__des">반품, 걱정하지 마세요.<br/>구매 후 7일 이내 반품이 가능합니다.</p>
-      				<a href="" class="service__link">자세히 보기</a>
-      			</div>
-      		</li>
-      		<li class="service__item">
-      			<div class="service__content">
-      				<img src="img/icon-exchan.png" alt="교환 아이콘" class="service__icon">
-      				<h4 class="service__title">교환 서비스</h4>
-      				<p class="service__des">단순 변심, 상품에 문제 발견 시<br/>교환이 가능하도록 서비스 준비중입니다.</p>
-      			</div>
-      		</li>
-      		<li class="service__item">
-      			<div class="service__content">
-      				<img src="img/icon-facebook.png" alt="페이스북 아이콘" class="service__icon service__icon--mr-30">
-      				<img src="img/icon-instagram.png" alt="인스타그램 아이콘" class="service__icon">
-      				<h4 class="service__title">Follow Us</h4>
-      				<p class="service__des">컨버스의 SNS 채널을 통해<br/>신상품 정보 및 이벤트 등 새로운 소식을<br/>확인하세요.</p>
-      			</div>
-      		</li>
-      	</ul>
-      </section>
-     <div class="add--fixed">
-       <a href="" class="add__link"><span class="add__txt">NEW 원스타 슬라이드 출시</span></a>
-     </div>
-  </main>
-  
-  <footer class="footer">
-  	<div class="footer__inner">
-  		<div class="footer__item">
-  			<div class="footer__content">
-  				<h4 class="footer__title">FOLLOW US</h4>
-  				<a href="" class="footer__icon"><img src="img/icon-facebook.png" alt=""></a>
-  				<a href="" class="footer__icon"><img src="img/icon-instagram.png" alt=""></a>
-  			</div>
-  		</div>
-  		<div class="footer__item">
-  			<div class="footer__content">
-  				<h4 class="footer__title">SUPPORT</h4>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section--07">
+			<div class="dashboard dashboard--mobilecols-1">
+
+				<div class="dashboard__item dashboard__item--mobilecol-13">
+					<div class="dashboard-item">
+						<img class="dashboard-item__img" src="img/Home_02_1440x900%20(1).gif">
+						<div class="dashboard-item__inner">
+							<p class="dashboard-item__foreword">NOW AVAILABLE</p>
+							<p class="dashboard-item__title dashboard-item__title--size-50p dashboard-item__title--bold">DAINTY SUMMER GATAWAY</p>
+							<p class="dashboard-item__des">클래식한 디자인에 위빙 디테일이 적용된 어퍼와<br />슬림한 실루엣이 특징인 2020년 여름 시즌 신상품을 만나보세요.</p>
+							<span class="dashboard-item__link--txt dashboard-item__link--color-white">구매하기</span>
+						</div>
+						<a href="" class="dashboard-item__btn dashboard-item__btn--mobile"><span>더 알아보기</span></a>
+					</div>
+				</div>
+				<div class="dashboard__item dashboard__item--row-2 dashboard__item--mobilecol-13">
+				<div class="dashboard-item">
+					<img class="dashboard-item__img" src="img/Home_01_1440x1800.jpg">
+					<div class="dashboard-item__inner">
+						<p class="dashboard-item__title">척테일러 올스타 데인티 서머 겟어웨이</p>
+					</div>
+				</div>
+				</div>
+				<div class="dashboard__item dashboard__item--flex-row">
+					<div class="dashboard-item">
+						<a href="" class="dashboard-item__link--block">
+							<img class="dashboard-item__img dashboard-item__img--state-primary" src="img/567695C_567695C_primary.jpg">
+							<img class="dashboard-item__img dashboard-item__img--state-hover" src="img/567695C_567695C_hover.jpg">
+							<div class="dashboard-item__inner">
+								<button class="dashboard-item__heart blind"><span>하트</span></button>
+								<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--bold dashboard-item__title--right">NEW ARRIVAL</p>
+								<div class="dashboard-item__info">
+									<a href="" class="dashboard-item__name">척테일러 올스타 데인티 서머 겟어웨이</a>
+									<p class="dashboard-item__value">59,000 원</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="dashboard-item">
+						<a href="" class="dashboard-item__link--block">
+							<img class="dashboard-item__img dashboard-item__img--state-primary" src="img/567694C_567694C_primary.jpg">
+							<img class="dashboard-item__img dashboard-item__img--state-hover" src="img/567694C_567694C_hover.jpg">
+							<div class="dashboard-item__inner">
+								<button class="dashboard-item__heart blind"><span>하트</span></button>
+								<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--bold dashboard-item__title--right">NEW ARRIVAL</p>
+								<div class="dashboard-item__info">
+									<a href="" class="dashboard-item__name">척테일러 올스타 데인티 서머 겟어웨이</a>
+									<p class="dashboard-item__value">59,000 원</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section--08">
+			<div class="dashboard dashboard--mobilecols-1">
+
+				<div class="dashboard__item dashboard__item--mobilecol-13">
+					<div class="dashboard-item">
+						<img class="dashboard-item__img" src="img/Home_02_1440x900_1.jpg">
+					</div>
+				</div>
+
+				<div class="dashboard__item dashboard__item--mobilecol-13">
+					<div class="dashboard-item">
+						<img src="img/Home_02_1440x900_2.jpg" alt="" class="dashboard-item__img">
+						<div class="dashboard-item__inner dashboard-item__inner--flex">
+							<p class="dashboard-item__title dashboard-item__title--color-black dashboard-item__title--size-50p dashboard-item__title--bold">WEEKEND FUN</p>
+							<p class="dashboard-item__des dashboard-item__des--color-black">
+								최고의 주말은 별 거 없어.<br />
+								편하게 티셔츠 하나 입고,<br />
+								친한 친구 불러서 노는 거야
+							</p>
+							<a href="" class="dashboard-item__link--txt"><span>썸머 티 컬렉션 보러가기</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dashboard__item dashboard__item--flex-row">
+					<div class="dashboard-item">
+						<a href="" class="dashboard-item__link--block">
+							<img class="dashboard-item__img dashboard-item__img--state-primary" src="img/10020931-A04_10020931-A04_primary.jpg">
+							<img class="dashboard-item__img dashboard-item__img--state-hover" src="img/10020931-A04_10020931-A04_hover.jpg">
+							<div class="dashboard-item__inner">
+								<button class="dashboard-item__heart blind"><span>하트</span></button>
+								<div class="dashboard-item__info">
+									<a href="" class="dashboard-item__name">척테일러 슈 패치 티</a>
+									<p class="dashboard-item__value">35,000 원</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="dashboard-item">
+						<a href="" class="dashboard-item__link--block">
+							<img class="dashboard-item__img" src="img/티 메인2.gif">
+							<div class="dashboard-item__inner">
+								<p class="dashboard-item__title">척테일러 슈 패치 티</p>
+							</div>
+							<div class="dashboard-item__overlay">
+								<span class="dashboard-item__overlay-txt dashboard-item__overlay-txt--center">구매하기</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div class="dashboard__item dashboard__item--flex-row">
+					<div class="dashboard-item">
+						<a href="" class="dashboard-item__link--block">
+							<img class="dashboard-item__img dashboard-item__img--state-primary" src="img/10018347-A05_10018347-A05_primary.jpg">
+							<img class="dashboard-item__img dashboard-item__img--state-hover" src="img/10018347-A05_10018347-A05_hover.jpg">
+							<div class="dashboard-item__inner">
+								<button class="dashboard-item__heart blind"><span>하트</span></button>
+								<div class="dashboard-item__info">
+									<a href="" class="dashboard-item__name">올스타 오버사이즈 티</a>
+									<p class="dashboard-item__value">39,000 원</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="dashboard-item dashboard-item">
+						<a href="" class="dashboard-item__link--block">
+							<img class="dashboard-item__img" src="img/720x900_02%20(1).jpg">
+							<div class="dashboard-item__inner">
+								<p class="dashboard-item__title">올스타 오버사이즈 티</p>
+							</div>
+							<div class="dashboard-item__overlay">
+								<span class="dashboard-item__overlay-txt dashboard-item__overlay-txt--center dashboard-item__overlay-txt--color-white">구매하기</span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="section section--10">
+			<ul class="service">
+				<li class="service__item">
+					<div class="service__content">
+						<img src="img/icon_free-del.png" alt="무료배송 아이콘" class="service__icon">
+						<h4 class="service__title">무료배송</h4>
+						<p class="service__des">5만원 이상 구매 시 무료배송</p>
+					</div>
+				</li>
+				<li class="service__item">
+					<div class="service__content">
+						<img src="img/icon-return.png" alt="반품 아이콘" class="service__icon">
+						<h4 class="service__title">반품 서비스</h4>
+						<p class="service__des">반품, 걱정하지 마세요.<br />구매 후 7일 이내 반품이 가능합니다.</p>
+						<a href="" class="service__link">자세히 보기</a>
+					</div>
+				</li>
+				<li class="service__item">
+					<div class="service__content">
+						<img src="img/icon-exchan.png" alt="교환 아이콘" class="service__icon">
+						<h4 class="service__title">교환 서비스</h4>
+						<p class="service__des">단순 변심, 상품에 문제 발견 시<br />교환이 가능하도록 서비스 준비중입니다.</p>
+					</div>
+				</li>
+				<li class="service__item">
+					<div class="service__content">
+						<img src="img/icon-facebook.png" alt="페이스북 아이콘" class="service__icon service__icon--mr-30">
+						<img src="img/icon-instagram.png" alt="인스타그램 아이콘" class="service__icon">
+						<h4 class="service__title">Follow Us</h4>
+						<p class="service__des">컨버스의 SNS 채널을 통해<br />신상품 정보 및 이벤트 등 새로운 소식을<br />확인하세요.</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<div class="add--fixed">
+			<a href="" class="add__link"><span class="add__txt">NEW 원스타 슬라이드 출시</span></a>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__inner">
+			<div class="footer__item">
+				<div class="footer__content">
+					<h4 class="footer__title">FOLLOW US</h4>
+					<a href="" class="footer__icon"><img src="img/icon-facebook.png" alt=""></a>
+					<a href="" class="footer__icon"><img src="img/icon-instagram.png" alt=""></a>
+				</div>
+			</div>
+			<div class="footer__item">
+				<div class="footer__content">
+					<h4 class="footer__title">SUPPORT</h4>
 					<ul class="footer__list">
 						<li class="footer__listitem"><a href="">고객지원센터</a></li>
 						<li class="footer__listitem"><a href="">1:1 문의</a></li>
 						<li class="footer__listitem"><a href="">주문/배송 조회</a></li>
 					</ul>
-  			</div>
-  		</div>
-  		<div class="footer__item">
-  			<div class="footer__content">
-  				<h4 class="footer__title">INFORMATION</h4>
+				</div>
+			</div>
+			<div class="footer__item">
+				<div class="footer__content">
+					<h4 class="footer__title">INFORMATION</h4>
 					<ul class="footer__list">
 						<li class="footer__listitem"><a href="">컨버스에 대하여</a></li>
 						<li class="footer__listitem"><a href="">회원가입</a></li>
 						<li class="footer__listitem"><a href="">매장안내</a></li>
 						<li class="footer__listitem"><a href="">공지사항</a></li>
 					</ul>
-  			</div>
-  		</div>
-  		<div class="footer__item">
-  			<div class="footer__content">
-  				<h4 class="footer__title">POLICY</h4>
+				</div>
+			</div>
+			<div class="footer__item">
+				<div class="footer__content">
+					<h4 class="footer__title">POLICY</h4>
 					<ul class="footer__list">
 						<li class="footer__listitem"><a href="">이용약관</a></li>
 						<li class="footer__listitem footer__listitem--bold"><a href="">개인정보처리방침</a></li>
 					</ul>
-  			</div>
-  		</div>
-  		<div class="footer__item footer__item--mobile">
-        <div class="accordion">
-           <div class="accordion__inner">
-              <h4 class="accordion__title">FAMILY SITES</h4>
-              <ul class="accordion__list">
-                <li class="accordion__listitem"><a href="" class="accordion__link">NIKE</a></li>
-                <li class="accordion__listitem"><a href="" class="accordion__link">Jordan</a></li>
-              </ul>  
-           </div>
-        </div>
-  		</div>
-  	</div>
-  	<div class="footer__company">
- 		 	<div class="footer__inner">
-				 <adress class="address">
-					 <span class="address__txt">(유)컨버스코리아</span>
-					 <span class="address__txt">대표 주형준</span>
-					 <span class="address__txt">개인정보책임 주형준</span>
-					 <span class="address__txt">사업자등록번호 220-88-74818</span>
-					 <span class="address__txt">통신판매업 신고번호: 제 2016-서울강남-00478호</span>
-					 <a href="" class="address__link">통신판매업자 신원정보 확인</a>
-					 <span class="address__txt">주소: 서울시 강남구 테헤란로 152 강남파이낸스센터 30F</span>
-					 <span class="address__txt">고객상담팀: 080-987-0182</span>
-					 <span class="address__txt">(상담시간 월·금 : AM 09:00 · PM 05:30, 주말/공휴일 휴무)</span>
-					 <a href="" class="address__link address__link--24h">conversekorea@converse.co.kr</a>
-					 <span class="address__txt address__copyright">2020 Converse Korea LLC. ALL Rights Reserved.</span>
-				 </adress>
-				 <dl class="footer__insurance">
-					 <dt class="footer__companytxt">소비자피해 보증보험</dt>
-					 <dd class="footer__companytxt">
-						 고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한<br/>
-						 구매안전서비스 소비자피해보증보험 서비스를 이용하실 수 있습니다.<br/>
-						 보증대상: 미배송, 반품/환불거부, 쇼핑몰 부도<br/>
-						 <a href="" class="footer__companylink">보증보험 가입사실 확인하기</a>
-					 </dd>
-				 </dl>
-				 <div class="footer__sns">
-				   <a href="" class="footer__icon--mobile"><img src="img/icon-facebook-footer.png" alt="" class="footer__iconimg"></a>
-				   <a href="" class="footer__icon--mobile"><img src="img/icon-instagram-footer.png" alt="" class="footer__iconimg"></a>
-				 </div>
-         <div class="locate locate--mobile">
-           <img src="img/locale-kr.svg" alt="" class="locate__img">
-           <div class="locate__lan locate__lan--color-white">
-             <span class="locate__lan__abbr">KR</span>
-             <span class="locate__lan__native">한국어</span>
-           </div>
-         </div>
- 		 	</div>
-  	</div>
-  </footer>
-  
-  <script src="js/plugin/jquery.js"></script>
-  <script src="js/plugin/slick.min.js"></script>
-  <script src="js/main.js"></script>
-  
-</body>
-</html>
+				</div>
+			</div>
+			<div class="footer__item footer__item--mobile">
+				<div class="accordion">
+					<div class="accordion__inner">
+						<h4 class="accordion__title">FAMILY SITES</h4>
+						<ul class="accordion__list">
+							<li class="accordion__listitem"><a href="" class="accordion__link">NIKE</a></li>
+							<li class="accordion__listitem"><a href="" class="accordion__link">Jordan</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__company">
+			<div class="footer__inner">
+				<adress class="address">
+					<span class="address__txt">(유)컨버스코리아</span>
+					<span class="address__txt">대표 주형준</span>
+					<span class="address__txt">개인정보책임 주형준</span>
+					<span class="address__txt">사업자등록번호 220-88-74818</span>
+					<span class="address__txt">통신판매업 신고번호: 제 2016-서울강남-00478호</span>
+					<a href="" class="address__link">통신판매업자 신원정보 확인</a>
+					<span class="address__txt">주소: 서울시 강남구 테헤란로 152 강남파이낸스센터 30F</span>
+					<span class="address__txt">고객상담팀: 080-987-0182</span>
+					<span class="address__txt">(상담시간 월·금 : AM 09:00 · PM 05:30, 주말/공휴일 휴무)</span>
+					<a href="" class="address__link address__link--24h">conversekorea@converse.co.kr</a>
+					<span class="address__txt address__copyright">2020 Converse Korea LLC. ALL Rights Reserved.</span>
+				</adress>
+				<dl class="footer__insurance">
+					<dt class="footer__companytxt">소비자피해 보증보험</dt>
+					<dd class="footer__companytxt">
+						고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한<br />
+						구매안전서비스 소비자피해보증보험 서비스를 이용하실 수 있습니다.<br />
+						보증대상: 미배송, 반품/환불거부, 쇼핑몰 부도<br />
+						<a href="" class="footer__companylink">보증보험 가입사실 확인하기</a>
+					</dd>
+				</dl>
+				<div class="footer__sns">
+					<a href="" class="footer__icon--mobile"><img src="img/icon-facebook-footer.png" alt="" class="footer__iconimg"></a>
+					<a href="" class="footer__icon--mobile"><img src="img/icon-instagram-footer.png" alt="" class="footer__iconimg"></a>
+				</div>
+				<div class="footer__locate">
+					<div class="locate locate--mobile">
+						<img src="img/locale-kr.svg" alt="" class="locate__img">
+						<div class="locate__lan locate__lan--color-white">
+							<span class="locate__lan__abbr">KR</span>
+							<span class="locate__lan__native">한국어</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/plugin/jquery.js"></script>
+	<script src="js/plugin/slick.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body></html>
