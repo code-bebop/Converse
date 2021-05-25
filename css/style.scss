@@ -1037,6 +1037,10 @@ body {
   }
 }
 
+.accordion {
+  display: none;
+}
+
 //1440px 이하 미디어쿼리
 
 @media screen and (max-width: 1440px) {
@@ -1366,6 +1370,20 @@ body {
   }
 
   .section {
+    &--01 {
+      .dashboard--rows-1 {
+        grid-template-rows: 1fr .5fr;
+      }
+    }
+    &--02 {
+      .section__content {
+        display: flex;
+        flex-direction: column;
+        .section__link {
+          order: 1;
+        }
+      }
+    }
     &__content {
       padding: 0 10px;
     }
@@ -1525,6 +1543,9 @@ body {
       height: auto;
       &--mobile {
         display: block;
+        .footer__content {
+          display: none;
+        }
       }
     }
     &__company {
